@@ -83,6 +83,10 @@ export const GlobalStyle = createGlobalStyle`
         background-attachment: fixed;
         background-size: cover;
         min-height: 110vh;
+
+        background-image: url('./star.png'); /* Replace with your own star image */
+  background-repeat: repeat-x;
+  animation: move 20s linear infinite; /* Adjust the duration and timing function as desired */
     }
 
     h1{
@@ -111,5 +115,21 @@ export const GlobalStyle = createGlobalStyle`
     li{
         width: 100%;
     }
+
+    @keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply the animation to the star element */
+.star {
+  background-image: url('./star.png'); /* Replace with your own star image */
+  background-repeat: repeat-x;
+  animation: move 20s linear infinite; /* Adjust the duration and timing function as desired */
+}
 
 `;
