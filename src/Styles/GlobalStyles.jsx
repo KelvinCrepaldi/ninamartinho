@@ -86,6 +86,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1{
+        font-family: var(--font-Doky);
         font-size: 3.5rem;
     }
 

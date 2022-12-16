@@ -5,8 +5,12 @@ export const MenuContainer = styled.div`
   height: 150px;
   background-color: #ffce9583;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  h1 {
+    text-align: center;
+  }
   nav a {
     text-align: center;
     padding: 0px 100px;
