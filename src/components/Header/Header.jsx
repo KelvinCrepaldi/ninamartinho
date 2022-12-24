@@ -6,7 +6,7 @@ import {
   OptionsDisplay,
 } from "./header.styles";
 import { useState } from "react";
-import headerImage from "../../assets/LOGO.png";
+import headerImage from "../../assets/logo.png";
 const Header = () => {
   const [optionsActivate, setOptionsActivate] = useState(false);
 
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LogoContainer>
-        <img src={headerImage} />
+        <img src={headerImage} alt="header logo" />
       </LogoContainer>
       <NavMenu>
         <ul>
