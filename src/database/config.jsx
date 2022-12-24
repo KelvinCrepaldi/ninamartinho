@@ -1,4 +1,4 @@
-import headerImage from "..//assets/LOGO.png";
+import headerImage from "../assets/LOGO.png";
 import homepageImage from "../assets/LOGO.png";
 export const configLayout = {
   headerImage: headerImage,
