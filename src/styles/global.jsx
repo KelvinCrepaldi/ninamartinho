@@ -104,6 +104,17 @@ const GlobalStyle = createGlobalStyle`
         background-attachment: fixed;
         background-size: cover;
 
+        .background-video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            top: 0;
+            z-index: -3;
+            filter: blur(3px);
+            transform: scale(1.1);
+        }
+
     }
 
     h1{
