@@ -6,7 +6,6 @@ import {
   OptionsDisplay,
 } from "./header.styles";
 import { useState } from "react";
-import LogoImage from "../../assets/LOGO.png";
 import { configLayout } from "../../database/config";
 const Header = () => {
   const [optionsActivate, setOptionsActivate] = useState(false);
