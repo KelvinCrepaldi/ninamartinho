@@ -1,5 +1,5 @@
-import RoutesPatchs from "./routes";
 import GlobalStyle from "./styles/global";
+import Home from "./pages/Home";
 
 import { useEffect } from "react";
 
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <RoutesPatchs />
+      <Home></Home>
     </>
   );
 };
