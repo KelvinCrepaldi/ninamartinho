@@ -7,22 +7,44 @@ import {
 } from "./header.styles";
 import { useState } from "react";
 import HeaderImage from "../../assets/logo.png";
+
+import { useEffect } from "react";
+
 const Header = () => {
   const [optionsActivate, setOptionsActivate] = useState(false);
 
+  const handleScrollToTop = () => window.scroll(0, 0);
   const handdleActivateMenu = (value) => setOptionsActivate(value);
+
   return (
     <HeaderContainer>
-      <LogoContainer>
+      <LogoContainer onClick={handleScrollToTop}>
         <img src={HeaderImage} alt="header logo" />
       </LogoContainer>
       <NavMenu>
         <ul>
           <li>
-            <NavLink>About</NavLink>
+            <NavLink
+              activeClass="active"
+              className="about"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={0}
+              offset={-130}
+            >
+              About
+            </NavLink>
           </li>
           <li>
             <NavLink
+              activeClass="active"
+              className="portfolio"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={0}
+              offset={-130}
               onMouseEnter={() => handdleActivateMenu(true)}
               onMouseLeave={() => handdleActivateMenu(false)}
             >
@@ -30,7 +52,17 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink>Contact</NavLink>
+            <NavLink
+              activeClass="active"
+              className="contact"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={0}
+              offset={-130}
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
         {optionsActivate && (
