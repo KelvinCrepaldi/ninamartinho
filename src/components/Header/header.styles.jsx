@@ -8,12 +8,21 @@ export const HeaderContainer = styled.header`
   box-sizing: border-box;
   position: fixed;
   top: 0px;
+  z-index: 1;
 
   width: 100vw;
   height: 90px;
-  padding: 0 40px;
+  padding: 0 100px;
 
-  background-color: var(--menu-bg);
+  background: rgb(4, 0, 43);
+  background: linear-gradient(
+    16deg,
+    rgba(4, 0, 43) 0%,
+    rgba(11, 5, 64) 22%,
+    rgba(20, 18, 45) 55%,
+    rgba(23, 14, 103) 89%,
+    rgba(20, 18, 45) 100%
+  );
 `;
 
 export const LogoContainer = styled.div`
