@@ -1,5 +1,5 @@
 import GlobalStyle from "./styles/global";
-import Home from "./pages/Home/Home";
+import Home from "pages/Home";
 
 import { useEffect } from "react";
 
