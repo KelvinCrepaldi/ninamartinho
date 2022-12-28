@@ -14,14 +14,11 @@ export const HeaderContainer = styled.header`
   height: 90px;
   padding: 0 100px;
 
-  background: rgb(4, 0, 43);
+  background: rgb(0, 0, 0);
   background: linear-gradient(
-    16deg,
-    rgba(4, 0, 43) 0%,
-    rgba(11, 5, 64) 22%,
-    rgba(20, 18, 45) 55%,
-    rgba(23, 14, 103) 89%,
-    rgba(20, 18, 45) 100%
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(19, 0, 34, 0.4) 60%
   );
 `;
 
@@ -33,15 +30,22 @@ export const LogoContainer = styled.div`
 
 export const NavMenu = styled.nav`
   position: relative;
+  z-index: 10;
+
   ul {
     width: 100%;
     display: flex;
+  }
+
+  li:hover {
+    transition: 0.2s;
+    transform: scale(1.1) translateY(-4px);
   }
 `;
 
 export const OptionsDisplay = styled.div`
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 80px;
   width: 300px;
 
@@ -86,13 +90,13 @@ export const OptionsDisplay = styled.div`
       opacity: 0;
     }
     to {
-      height: 300px;
+      height: 400px;
       opacity: 1;
     }
   }
   @keyframes options-out {
     from {
-      height: 300px;
+      height: 400px;
       opacity: 1;
     }
     to {
@@ -118,5 +122,6 @@ export const NavLink = styled(Link)`
 
   &:hover {
     color: var(--nav-color-hover);
+    text-shadow: 0 0 10px var(--nav-color-hover-shadow);
   }
 `;
