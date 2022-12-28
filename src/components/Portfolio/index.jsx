@@ -1,10 +1,19 @@
-import SectionContainer from "components/SectionContainer";
 import { Element } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
-const Portfolio = ({ icon, title }) => {
+import SectionContainer from "components/SectionContainer";
+import { PortfolioSelection } from "./portfolio.styles";
+
+const Portfolio = () => {
   return (
-    <SectionContainer icon={icon} title={title}>
+    <SectionContainer
+      icon={<FontAwesomeIcon icon={faPaintBrush} />}
+      title="Portfolio"
+    >
       <Element name="portfolio" />
+
+      <PortfolioSelection>asadsad</PortfolioSelection>
     </SectionContainer>
   );
 };

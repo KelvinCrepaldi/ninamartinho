@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   margin: 100px auto;
+  padding: 0px 20px;
   padding-bottom: 30px;
   width: 100%;
   max-width: 1100px;
@@ -12,7 +13,7 @@ export const HomeContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 80vh;
+    min-height: 70vh;
   }
 
   .logo-homepage {

@@ -104,8 +104,15 @@ const GlobalStyle = createGlobalStyle`
         linear-gradient(to bottom, #8c60a9, #8c60a9, #8c60a9, #8c60a9, #8c60a9, #8452ab, #7a44ae, #6e35b0, #6026b3, #541dab, #4813a3, #3b089b, #330586, #2a0372, #22015f, #1a004c);
         background-repeat: no-repeat;
         background-size: auto 70vh, auto;
-        background-position: top, center;
+        background-position: 100% 0;
+        animation: bgmve 40s infinite linear;
     }
+
+    @keyframes bgmve {
+        to {background-position: 0 0;
+        }
+    }
+
 
     h1{
         font-family: var(--font-Doky);
