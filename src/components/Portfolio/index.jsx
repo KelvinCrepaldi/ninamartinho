@@ -1,15 +1,10 @@
 import SectionContainer from "components/SectionContainer";
 import { Element } from "react-scroll";
 
-const Portfolio = () => {
+const Portfolio = ({ icon, title }) => {
   return (
-    <SectionContainer>
+    <SectionContainer icon={icon} title={title}>
       <Element name="portfolio" />
-      <h1>adsasd</h1>
-      <p>i fsadf nsaiu fnsad </p>
-      <p>i fsadf nsaiu fnsad </p>
-      <p>i fsadf nsaiu fnsad </p>
-      <p>i fsadf nsaiu fnsad </p>
     </SectionContainer>
   );
 };
