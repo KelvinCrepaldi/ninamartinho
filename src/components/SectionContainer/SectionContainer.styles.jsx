@@ -7,30 +7,42 @@ export const Container = styled(Element)`
   max-width: 1024px;
   width: 100%;
   min-height: 400px;
-  padding: 1px;
-  background: rgb(61, 0, 73);
+  border-radius: 10px;
+  overflow: hidden;
 
-  border-radius: 7px;
-  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.7),
-    inset 1px 1px 2px rgb(100, 100, 100, 0.1),
-    inset -2px -2px 2px rgb(0, 0, 0, 0.1);
-
+  border: 1px solid #8400db60;
+  background: #4c41a2;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
   .container-title {
-    background: linear-gradient(
-      0deg,
-      rgba(4, 0, 43, 0.2) 0%,
-      rgba(52, 0, 153, 0.2) 100%
-    );
-    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    box-sizing: border-box;
+    padding: 30px 15px 20px;
+
+    background: linear-gradient(
+      45deg,
+      rgba(66, 0, 141, 0.4) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+
+    h1 {
+    }
   }
 
   .container-content {
     padding: 5px;
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+  }
+
+  .icon {
+    font-size: 40px;
+    margin-right: 15px;
   }
 
   &:nth-of-type(2) {
