@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
 import SectionContainer from "components/SectionContainer";
-import { PortfolioSelection } from "./portfolio.styles";
+import { PortfolioSelection, PortfolioButton } from "./portfolio.styles";
 import projects from "../../database/projects.json";
 
 const Portfolio = () => {
@@ -22,8 +22,9 @@ const Portfolio = () => {
 
       <PortfolioSelection>
         {!showSelection ? (
-          <div>
-            <button onClick={handleSelection}>select</button>
+          <div className="portfolio-type">
+            <PortfolioButton onClick={handleSelection}>2D</PortfolioButton>
+            <PortfolioButton onClick={handleSelection}>3D</PortfolioButton>
           </div>
         ) : (
           <div>

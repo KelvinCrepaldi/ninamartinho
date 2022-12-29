@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   margin: 100px auto;
-  padding: 0px 20px;
   padding-bottom: 30px;
   width: 100%;
-  max-width: 1100px;
+
   box-sizing: border-box;
   min-height: calc(100vh - 150px);
 
