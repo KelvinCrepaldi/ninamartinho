@@ -45,8 +45,8 @@ const Header = () => {
               smooth={true}
               duration={0}
               offset={-130}
-              onMouseEnter={() => handdleActivateMenu(true)}
               onMouseLeave={() => handdleActivateMenu(false)}
+              onMouseMove={() => handdleActivateMenu(true)}
             >
               Portfolio
             </NavLink>

@@ -95,6 +95,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: var(--font-Macherie);
+        font-display: swap;
         color: var(--color-white);
         text-shadow: 1px 1px 2px var(--shadow-gray);
         overflow-x: hidden;

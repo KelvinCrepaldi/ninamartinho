@@ -6,7 +6,9 @@ export const PortfolioSelection = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  height: 100%;
+  width: 100%;
+  height: 70vh;
+
   box-sizing: border-box;
 
   border: 1px solid red;
@@ -19,11 +21,52 @@ export const PortfolioSelection = styled.div`
   }
 `;
 
-export const PortfolioButton = styled.button`
-  max-width: 350px;
-  max-height: 350px;
-  min-width: 150px;
-  min-height: 150px;
+export const SelectionLayers = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
+
+  .buttonsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttonsContainer button {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
+`;
+
+export const GalleryLayer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  .GalleryMap {
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const PortfolioHeader = styled.div`
+  width: 100%;
+  h2 {
+    margin: 20px 0;
+    text-align: center;
+  }
+`;
+
+export const BackButton = styled.button`
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
 `;
