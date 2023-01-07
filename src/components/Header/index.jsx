@@ -8,13 +8,14 @@ import {
 import { useState } from "react";
 import HeaderImage from "../../assets/logo.png";
 
-import { useEffect } from "react";
-
 const Header = () => {
   const [optionsActivate, setOptionsActivate] = useState(false);
 
   const handleScrollToTop = () => window.scroll(0, 0);
-  const handdleActivateMenu = (value) => setOptionsActivate(value);
+
+  const handdleActivateMenu = (value) => {
+    setOptionsActivate(value);
+  };
 
   return (
     <HeaderContainer>
@@ -36,7 +37,10 @@ const Header = () => {
               About
             </NavLink>
           </li>
-          <li>
+          <li
+            onMouseOut={() => handdleActivateMenu(false)}
+            onMouseOver={() => handdleActivateMenu(true)}
+          >
             <NavLink
               activeClass="active"
               className="portfolio"
@@ -45,8 +49,6 @@ const Header = () => {
               smooth={true}
               duration={0}
               offset={-130}
-              onMouseLeave={() => handdleActivateMenu(false)}
-              onMouseMove={() => handdleActivateMenu(true)}
             >
               Portfolio
             </NavLink>
@@ -65,7 +67,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        {optionsActivate && (
+        {optionsActivate ? (
           <OptionsDisplay
             onMouseEnter={() => handdleActivateMenu(true)}
             onMouseLeave={() => handdleActivateMenu(false)}
@@ -81,7 +83,7 @@ const Header = () => {
               </ul>
             </div>
           </OptionsDisplay>
-        )}
+        ) : null}
       </NavMenu>
     </HeaderContainer>
   );

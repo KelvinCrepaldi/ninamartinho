@@ -10,8 +10,7 @@ export const Container = styled(Element)`
   border-radius: 10px;
   overflow: hidden;
 
-  border: 2px solid #8400db60;
-  background: var(--purple-strong);
+  background: var(--content-color);
   color: var(--purple-light);
 
   //backdrop-filter: blur(5px);
@@ -25,7 +24,7 @@ export const Container = styled(Element)`
 
     padding: 30px 15px 20px;
 
-    background: rgba(66, 0, 141, 0.4);
+    background: var(--content-header-color);
   }
 
   .container-content {

@@ -11,7 +11,6 @@ export const PortfolioSelection = styled.div`
 
   box-sizing: border-box;
 
-  border: 1px solid red;
   .portfolio-type {
     width: 100%;
     display: flex;

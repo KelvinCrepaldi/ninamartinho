@@ -1,8 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Macherie from "../fonts/macherie.ttf";
-import Doky from "../fonts/DokyRegular.ttf";
 import bgcolor from "../assets/bgcolor.png";
-import bgstars from "../assets/bgstars.png";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -59,14 +56,7 @@ const GlobalStyle = createGlobalStyle`
     // Reset CSS     ===============================
     // Global config ===============================
 
-    @font-face {
-        font-family: 'macherie';
-        src: url(${Macherie}) format('truetype');
-    }
-    @font-face {
-        font-family: 'Doky';
-        src: url(${Doky}) format('truetype');
-    }
+    
 
     html{
         
@@ -74,8 +64,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-        --font-Macherie: 'macherie', sans-serif;
-        --font-Doky: 'Doky', sans-serif;
+        --font-Macherie: 'macherie';
+        --font-Doky: 'Doky';
 
         --menu-bg: #f3dcf386;
         --nav-color: #ffff;
@@ -84,6 +74,9 @@ const GlobalStyle = createGlobalStyle`
         --nav-color-hover-transparent:#4c41a299;
         --nav-link-fontsize: 1.7rem;
 
+        --content-color: #8280ffe1;
+        --content-header-color:#4c41a299;
+        
         --color-white: #ecfbff;
         --shadow-gray: #797979;
 
@@ -103,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         
 
-        background: url(${bgcolor}) repeat-x top scroll;
+        background: url(${bgcolor}) repeat-x top, black;
         background-size: cover;
 
     }

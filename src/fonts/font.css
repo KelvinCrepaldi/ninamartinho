@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "macherie";
+  font-display: fallback;
+  src: url(macherie.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Doky";
+  font-display: fallback;
+  src: url(dokyRegular.ttf) format("truetype");
+}
