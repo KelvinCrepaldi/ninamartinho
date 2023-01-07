@@ -18,6 +18,6 @@ export const HomeContainer = styled.div`
   .logo-homepage {
     width: 100%;
     height: fit-content;
-    max-width: 700px;
+    max-width: 800px;
   }
 `;

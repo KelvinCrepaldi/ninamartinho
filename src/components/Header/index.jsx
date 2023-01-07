@@ -6,7 +6,7 @@ import {
   OptionsDisplay,
 } from "./header.styles";
 import { useState } from "react";
-import HeaderImage from "../../assets/logo.png";
+import HeaderImage from "../../assets/icon.png";
 
 const Header = () => {
   const [optionsActivate, setOptionsActivate] = useState(false);
@@ -21,6 +21,7 @@ const Header = () => {
     <HeaderContainer>
       <LogoContainer onClick={handleScrollToTop}>
         <img src={HeaderImage} alt="header logo" />
+        <span className="logo-text">Nina Martinho</span>
       </LogoContainer>
       <NavMenu>
         <ul>
@@ -32,7 +33,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={0}
-              offset={-130}
+              offset={-200}
             >
               About
             </NavLink>
@@ -48,7 +49,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={0}
-              offset={-130}
+              offset={-200}
             >
               Portfolio
             </NavLink>
@@ -61,7 +62,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={0}
-              offset={-130}
+              offset={-200}
             >
               Contact
             </NavLink>
@@ -75,11 +76,46 @@ const Header = () => {
             <div className="nav__portfolio-options">
               <ul>
                 <span>2D</span>
-                <li>Concepts</li>
-                <li>Ilustrations</li>
+                <li>
+                  <NavLink
+                    activeClass="active"
+                    className="portfolio"
+                    to="portfolio"
+                    spy={true}
+                    smooth={true}
+                    duration={0}
+                    offset={-200}
+                  >
+                    Concepts
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    activeClass="active"
+                    className="portfolio"
+                    to="portfolio"
+                    spy={true}
+                    smooth={true}
+                    duration={0}
+                    offset={-200}
+                  >
+                    Ilustrations
+                  </NavLink>
+                </li>
                 <span>3D</span>
-                <li>Model</li>
-                <li>Unreal</li>
+                <li>
+                  <NavLink
+                    activeClass="active"
+                    className="portfolio"
+                    to="portfolio"
+                    spy={true}
+                    smooth={true}
+                    duration={0}
+                    offset={-200}
+                  >
+                    Projects
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </OptionsDisplay>

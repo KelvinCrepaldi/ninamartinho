@@ -25,7 +25,11 @@ const Portfolio = () => {
 
   const handleFirstOption = (option) => {
     setFirstOption(option);
-    setOptionsLayer("secondLayer");
+    if (option === "3D") {
+      setOptionsLayer("gallery");
+    } else {
+      setOptionsLayer("secondLayer");
+    }
   };
 
   const handleSecondLayer = (option) => {
@@ -76,7 +80,11 @@ const Portfolio = () => {
       return (
         <GalleryLayer>
           <PortfolioHeader>
-            <BackButton onClick={handleeBacktoSecond}>back</BackButton>
+            {firstOption === "3D" ? (
+              <BackButton onClick={handleeBacktoFirst}>back</BackButton>
+            ) : (
+              <BackButton onClick={handleeBacktoSecond}>back</BackButton>
+            )}
             <h2>{`${firstOption} ${secondOption}`}</h2>
           </PortfolioHeader>
           <div className="GalleryMap">{renderMapProjects()}</div>

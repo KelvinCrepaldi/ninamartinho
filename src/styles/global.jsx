@@ -72,10 +72,11 @@ const GlobalStyle = createGlobalStyle`
         --nav-color-hover:#bfb1ff; 
         --nav-color-hover-shadow: #8280ff;
         --nav-color-hover-transparent:#4c41a299;
-        --nav-link-fontsize: 1.7rem;
+        --nav-link-fontsize: 1.9rem;
 
-        --content-color: #8280ffe1;
-        --content-header-color:#4c41a299;
+        --content-color: #a67aece0;
+        --content-header-color:linear-gradient(140deg, #210041b2 0%, #7911be99 100%);
+        --content-shadow:  -7px -5px 1px 0px #db80ff3c, -13px 4px 1px #21004176;
         
         --color-white: #ecfbff;
         --shadow-gray: #797979;
