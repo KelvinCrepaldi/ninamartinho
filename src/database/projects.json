@@ -1,44 +1,34 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Traditional Lee Sin Study",
-    "link_to": "https://www.artstation.com/artwork/VymLlg",
-    "src": "https://cdnb.artstation.com/p/assets/images/images/056/646/047/large/nina-martinho-lee-study.jpg?1669760873",
-    "description": "Digital painting study using a Muay Thai reference photo from Pinterest done in 6 hours. I've transformed him into the character Lee Sin from League of Legends in his skin: Traditional Lee Sin."
+    "description": "Digital painting study using a Muay Thai reference photo from Pinterest done in 6 hours. I've transformed him into the character Lee Sin from League of Legends in his skin: Traditional Lee Sin.",
+    "permalink": "https://ninamartinho.artstation.com/projects/VymLlg",
+    "img_url": "https://cdnb.artstation.com/p/assets/images/images/056/646/047/20221129162753/smaller_square/nina-martinho-lee-study.jpg?1669760873",
+    "type": "concept"
   },
   {
-    "id": 1,
-    "title": "Traditional Lee Sin Study",
-    "link_to": "https://www.artstation.com/artwork/VymLlg",
-    "src": "https://cdnb.artstation.com/p/assets/images/images/056/646/047/large/nina-martinho-lee-study.jpg?1669760873",
-    "description": "Digital painting study using a Muay Thai reference photo from Pinterest done in 6 hours. I've transformed him into the character Lee Sin from League of Legends in his skin: Traditional Lee Sin."
+    "id": "2",
+    "title": "Oxalaia Quilombensis",
+    "description": "Brazilian Dinosaur Illustration. Oxalaia Quilombensis",
+    "permalink": "https://ninamartinho.artstation.com/projects/JeKeDd",
+    "img_url": "https://cdna.artstation.com/p/assets/images/images/054/306/132/20220926193127/smaller_square/nina-martinho-oxalaia-hex.jpg?1664238687",
+    "type": "concept"
   },
   {
-    "id": 1,
-    "title": "Traditional Lee Sin Study",
-    "link_to": "https://www.artstation.com/artwork/VymLlg",
-    "src": "https://cdnb.artstation.com/p/assets/images/images/056/646/047/large/nina-martinho-lee-study.jpg?1669760873",
-    "description": "Digital painting study using a Muay Thai reference photo from Pinterest done in 6 hours. I've transformed him into the character Lee Sin from League of Legends in his skin: Traditional Lee Sin."
+    "id": "3",
+    "title": "Portrait Study",
+    "description": "Digital painting study, personal work.",
+    "permalink": "https://www.artstation.com/artwork/ArP3gq",
+    "img_url": "https://cdnb.artstation.com/p/assets/images/images/048/931/089/20220429170927/smaller_square/nina-martinho-study.jpg?1651270168",
+    "type": "ilustration"
   },
   {
-    "id": 1,
-    "title": "Traditional Lee Sin Study",
-    "link_to": "https://www.artstation.com/artwork/VymLlg",
-    "src": "https://cdnb.artstation.com/p/assets/images/images/056/646/047/large/nina-martinho-lee-study.jpg?1669760873",
-    "description": "Digital painting study using a Muay Thai reference photo from Pinterest done in 6 hours. I've transformed him into the character Lee Sin from League of Legends in his skin: Traditional Lee Sin."
-  },
-  {
-    "id": 1,
-    "title": "Traditional Lee Sin Study",
-    "link_to": "https://www.artstation.com/artwork/VymLlg",
-    "src": "https://cdnb.artstation.com/p/assets/images/images/056/646/047/large/nina-martinho-lee-study.jpg?1669760873",
-    "description": "Digital painting study using a Muay Thai reference photo from Pinterest done in 6 hours. I've transformed him into the character Lee Sin from League of Legends in his skin: Traditional Lee Sin."
-  },
-  {
-    "id": 1,
-    "title": "Traditional Lee Sin Study",
-    "link_to": "https://www.artstation.com/artwork/VymLlg",
-    "src": "https://cdnb.artstation.com/p/assets/images/images/056/646/047/large/nina-martinho-lee-study.jpg?1669760873",
-    "description": "Digital painting study using a Muay Thai reference photo from Pinterest done in 6 hours. I've transformed him into the character Lee Sin from League of Legends in his skin: Traditional Lee Sin."
+    "id": "4",
+    "title": "Marin Kitagawa Fanart",
+    "description": "Marin Kitagawa fanart from the anime: Sono Bisque Doll wa Koi wo suru",
+    "permalink": "https://www.artstation.com/artwork/LeExa0",
+    "img_url": "https://cdnb.artstation.com/p/assets/images/images/046/837/713/20220228214311/smaller_square/nina-martinho-marin.jpg?1646106192",
+    "type": "ilustration"
   }
 ]

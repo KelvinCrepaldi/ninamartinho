@@ -4,16 +4,17 @@ import { Element } from "react-scroll";
 export const Container = styled(Element)`
   margin: 60vh auto;
 
-  max-width: 1024px;
+  max-width: 1200px;
   width: 100%;
   min-height: 400px;
   border-radius: 10px;
   overflow: hidden;
 
-  border: 1px solid #8400db60;
-  background: #4c41a2;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: var(--content-color);
+  color: var(--purple-light);
+
+  //backdrop-filter: blur(5px);
+  //-webkit-backdrop-filter: blur(5px);
 
   .container-title {
     display: flex;
@@ -23,20 +24,13 @@ export const Container = styled(Element)`
 
     padding: 30px 15px 20px;
 
-    background: linear-gradient(
-      45deg,
-      rgba(66, 0, 141, 0.4) 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    );
-
-    h1 {
-    }
+    background: var(--content-header-color);
   }
 
   .container-content {
     padding: 5px;
     width: 100%;
-    height: 400px;
+    min-height: 50vh;
     box-sizing: border-box;
   }
 

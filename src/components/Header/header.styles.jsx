@@ -39,7 +39,6 @@ export const NavMenu = styled.nav`
 
   li:hover {
     transition: 0.2s;
-    transform: scale(1.1) translateY(-4px);
   }
 `;
 
@@ -87,7 +86,7 @@ export const OptionsDisplay = styled.div`
   @keyframes options-in {
     from {
       height: 0px;
-      opacity: 0;
+      opacity: 0.4;
     }
     to {
       height: 400px;
@@ -116,12 +115,7 @@ export const NavLink = styled(Link)`
   color: var(--nav-color);
   transition: 0.3s;
 
-  &.active {
-    border-bottom: 3px solid green;
-  }
-
   &:hover {
     color: var(--nav-color-hover);
-    text-shadow: 0 0 10px var(--nav-color-hover-shadow);
   }
 `;
