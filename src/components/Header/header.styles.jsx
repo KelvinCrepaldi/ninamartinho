@@ -115,22 +115,14 @@ export const OptionsDisplay = styled.div`
       opacity: 1;
     }
   }
-  @keyframes options-out {
-    from {
-      height: 400px;
-      opacity: 1;
-    }
-    to {
-      height: 0px;
-      opacity: 0;
-    }
-  }
 `;
 
 export const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.4);
 
   font-size: var(--nav-link-fontsize);
 

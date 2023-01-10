@@ -11,7 +11,8 @@ const Contact = () => {
       title="Contact"
     >
       <Element name="contact" />
-      Contact
+
+      <a></a>
     </SectionContainer>
   );
 };

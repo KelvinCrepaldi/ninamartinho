@@ -13,8 +13,9 @@ export const Container = styled(Element)`
   color: var(--purple-light);
 
   box-shadow: var(--content-shadow);
-  //backdrop-filter: blur(5px);
-  //-webkit-backdrop-filter: blur(5px);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
   .container-title {
     display: flex;
@@ -41,5 +42,23 @@ export const Container = styled(Element)`
 
   &:nth-of-type(2) {
     margin-top: 0px;
+  }
+
+  p {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: var(--content-p-size);
+    text-shadow: 2px 2px 2px var(--purple-strong);
+  }
+
+  img {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    filter: drop-shadow(3px 3px 2px rgb(0, 0, 0, 0.5));
   }
 `;
