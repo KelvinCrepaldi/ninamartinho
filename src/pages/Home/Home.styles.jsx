@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-  margin: 100px auto;
+  margin: 0 auto;
   padding-bottom: 30px;
   width: 100%;
   position: relative;

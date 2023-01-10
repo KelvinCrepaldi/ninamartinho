@@ -4,7 +4,7 @@ import About from "components/About";
 import Contact from "components/Contact";
 import Portfolio from "components/Portfolio";
 import Social from "components/Social";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 import start from "../../assets/star.png";
 import icon from "../../assets/icon.png";
 import { Star, StarPosition } from "./Home.styles";
@@ -12,36 +12,6 @@ import { useState, useEffect } from "react";
 
 import { HomeContainer } from "./Home.styles";
 const Home = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const imageUrls = [logo, start, icon];
-
-  useEffect(() => {
-    let imagesToLoad = imageUrls.length;
-
-    const onImageLoad = () => {
-      imagesToLoad--;
-      if (imagesToLoad === 0) {
-        setIsLoading(false);
-      }
-    };
-
-    imageUrls.forEach((imageUrl) => {
-      const image = new window.Image();
-      image.src = imageUrl;
-      image.onload = onImageLoad;
-      image.onerror = onImageLoad;
-    });
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div className="loading">
-        <span>Loading Page...</span>
-      </div>
-    );
-  }
-
   return (
     <>
       <Header></Header>
@@ -52,6 +22,7 @@ const Home = () => {
             src={logo}
             alt="Nina Martinho logo homepage"
           />
+
           <p className="subtitle-logo">Game, Concept and Illustrator Artist</p>
           <Social />
           <StarPosition posX="80%" posY="80%" size="100px">

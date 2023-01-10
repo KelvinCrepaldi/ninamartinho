@@ -104,18 +104,35 @@ const GlobalStyle = createGlobalStyle`
         background: url(${bgcolor}) repeat-x top, black;
         background-size: cover;
 
-        
-
     }
 
+    //loading bar
+    .loading-bar {
+        height: 4px;
+        width: 100%;
+        background: #f2f2f2;
+        position: relative;
+    }
+
+    .loading-bar-progress {
+        height: 100%;
+        background: #4caf50;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width 0.3s ease-in-out;
+    }
     .loading {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100vw;
         height: 100vh;
         text-align: center;
         font-size: 2rem;
+        background-color: #392357;
+        
     }
 
    h1,h2,h3{
