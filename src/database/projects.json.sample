@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "title": "Traditional Lee Sin Study",
+    "description": "Digital painting study using a Muay Thai reference photo from Pinterest done in 6 hours. I've transformed him into the character Lee Sin from League of Legends in his skin: Traditional Lee Sin.",
+    "permalink": "https://ninamartinho.artstation.com/projects/VymLlg",
+    "assets": [
+      {
+        "id": 1,
+        "title": "finalized Lee Sin version",
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/056/646/047/large/nina-martinho-lee-study.jpg?1669760873"
+      },
+      {
+        "id": 2,
+        "title": "without character parts",
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/056/646/049/large/nina-martinho-lee-study2.jpg?1669759471"
+      },
+      {
+        "id": 3,
+        "title": "reference photo",
+        "image_url": "https://cdna.artstation.com/p/assets/images/images/056/646/178/large/nina-martinho-00f61ef2dc902bc730729d344809ff2e-figure-drawing-drawing-practice.jpg?1669759739"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Oxalaia Quilombensis",
+    "description": "Brazilian Dinosaur Illustration. Oxalaia Quilombensis",
+    "permalink": "https://ninamartinho.artstation.com/projects/JeKeDd",
+    "assets": [
+      {
+        "id": 1,
+        "title": "Oxalaia Head Details",
+        "image_url": "https://cdna.artstation.com/p/assets/images/images/054/306/132/large/nina-martinho-oxalaia-hex.jpg?1664238687"
+      },
+      {
+        "id": 2,
+        "title": "Oxalaia Full Body",
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/054/306/143/large/nina-martinho-oxalaia-fullbody-gray.jpg?1664238572"
+      },
+      {
+        "id": 3,
+        "title": "Grayscale",
+        "image_url": "https://cdna.artstation.com/p/assets/images/images/056/646/178/large/nina-martinho-00f61ef2dc902bc730729d344809ff2e-figure-drawing-drawing-practice.jpg?1669759739"
+      },
+      {
+        "id": 4,
+        "title": "Base Colors",
+        "image_url": "https://cdna.artstation.com/p/assets/images/images/054/311/870/large/nina-martinho-imagem-2022-09-27-023951852.jpg?1664257192"
+      },
+      {
+        "id": 5,
+        "title": "Sketch",
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/054/311/865/large/nina-martinho-imagem-2022-09-27-023937307.jpg?1664257178"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Portrait Study",
+    "description": "Digital painting study, personal work.",
+    "permalink": "https://www.artstation.com/artwork/ArP3gq",
+    "assets": [
+      {
+        "id": 1,
+        "title": "",
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/048/931/089/large/nina-martinho-study.jpg?1651270168"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Marin Kitagawa Fanart",
+    "description": "Marin Kitagawa fanart from the anime: Sono Bisque Doll wa Koi wo suru",
+    "permalink": "https://www.artstation.com/artwork/LeExa0",
+    "assets": [
+      {
+        "id": 1,
+        "title": "",
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/046/837/713/large/nina-martinho-marin.jpg?1646106192"
+      },
+      {
+        "id": 2,
+        "title": "",
+        "image_url": "https://cdnb.artstation.com/p/assets/images/images/046/837/719/large/nina-martinho-marinline.jpg?1646106159"
+      }
+    ]
+  }
+]

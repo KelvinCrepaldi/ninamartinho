@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
 
 export const HeaderContainer = styled.header`
@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
 
   width: 100vw;
   height: 90px;
-  padding: 0 100px;
+  padding: 0 30px;
 
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -23,8 +23,30 @@ export const HeaderContainer = styled.header`
 `;
 
 export const LogoContainer = styled.div`
+  .logo-text {
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    font-size: 1rem;
+  }
+
   img {
-    height: 60px;
+    height: 100px;
+
+    animation: headerlogoanimation 2s infinite alternate-reverse;
+  }
+
+  @keyframes headerlogoanimation {
+    from {
+      -webkit-filter: drop-shadow(0px 0px 3px rgb(255, 255, 255, 0.2));
+      filter: drop-shadow(0px 0px 3px rgb(255, 255, 255, 0.2));
+      transform: scale(1);
+    }
+    to {
+      -webkit-filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.2));
+      filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.4));
+      transform: scale(1.1);
+    }
   }
 `;
 
@@ -39,7 +61,6 @@ export const NavMenu = styled.nav`
 
   li:hover {
     transition: 0.2s;
-    transform: scale(1.1) translateY(-4px);
   }
 `;
 
@@ -87,21 +108,11 @@ export const OptionsDisplay = styled.div`
   @keyframes options-in {
     from {
       height: 0px;
-      opacity: 0;
+      opacity: 0.4;
     }
     to {
       height: 400px;
       opacity: 1;
-    }
-  }
-  @keyframes options-out {
-    from {
-      height: 400px;
-      opacity: 1;
-    }
-    to {
-      height: 0px;
-      opacity: 0;
     }
   }
 `;
@@ -111,17 +122,14 @@ export const NavLink = styled(Link)`
   padding: 0.5rem 1rem;
   cursor: pointer;
 
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.4);
+
   font-size: var(--nav-link-fontsize);
 
   color: var(--nav-color);
   transition: 0.3s;
 
-  &.active {
-    border-bottom: 3px solid green;
-  }
-
   &:hover {
     color: var(--nav-color-hover);
-    text-shadow: 0 0 10px var(--nav-color-hover-shadow);
   }
 `;
