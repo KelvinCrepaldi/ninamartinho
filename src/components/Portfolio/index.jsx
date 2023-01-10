@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 import { Element } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,6 +19,19 @@ const Portfolio = () => {
   const [optionsLayer, setOptionsLayer] = useState("firstLayer");
   const [firstOption, setFirstOption] = useState("");
   const [secondOption, setSecondOption] = useState("");
+
+  useEffect(() => {
+    axios
+      .get("https://www.artstation.com/users/ninamartinho/projects.json", {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+        },
+      })
+      .then((res) => {
+        console.log(res);
+      });
+  }, []);
 
   const handleeBacktoFirst = () => setOptionsLayer("firstLayer");
 
