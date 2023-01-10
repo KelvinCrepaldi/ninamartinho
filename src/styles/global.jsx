@@ -104,6 +104,18 @@ const GlobalStyle = createGlobalStyle`
         background: url(${bgcolor}) repeat-x top, black;
         background-size: cover;
 
+        
+
+    }
+
+    .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        font-size: 2rem;
     }
 
    h1,h2,h3{
