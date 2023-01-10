@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 100%;
         font: inherit;
         vertical-align: baseline;
+        box-sizing: border-box;
     }
     /* HTML5 display-role reset for older browsers */
     article, aside, details, figcaption, figure, 
@@ -53,10 +54,9 @@ const GlobalStyle = createGlobalStyle`
         border-collapse: collapse;
         border-spacing: 0;
     }
+
     // Reset CSS     ===============================
     // Global config ===============================
-
-    
 
     html{
         
@@ -72,10 +72,15 @@ const GlobalStyle = createGlobalStyle`
         --nav-color-hover:#bfb1ff; 
         --nav-color-hover-shadow: #8280ff;
         --nav-color-hover-transparent:#4c41a299;
-        --nav-link-fontsize: 1.7rem;
+        --nav-link-fontsize: 1.9rem;
 
-        --content-color: #8280ffe1;
-        --content-header-color:#4c41a299;
+        --content-color: rgba(183, 163, 190, 0.445);
+        --content-header-color:linear-gradient(140deg, #210041b2 0%, #7911be99 100%);
+        --content-shadow:  -7px -5px 1px 0px #db80ff3c;
+        --content-p-size: 1.9rem;
+        --subtitle-logo-color: #d1beff;
+        --social-color: #bfb1ff;
+        --social-shadow: -1px 2px 2px #210041b2;
         
         --color-white: #ecfbff;
         --shadow-gray: #797979;
@@ -100,6 +105,10 @@ const GlobalStyle = createGlobalStyle`
         background-size: cover;
 
     }
+
+   h1,h2,h3{
+    text-shadow:1px 1px 4px rgb(0,0,0,0.7);
+   }
 
     h1{
         font-family: var(--font-Doky);
