@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import bgcolor from "../assets/bgcolor.png";
+import bgcolor from "../assets/bgcolor.webp";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -91,6 +91,8 @@ const GlobalStyle = createGlobalStyle`
         --purple-light-transparent: #f3dcf386;
         --white: #ffff;
         --black: #080008;
+
+        --portfolio-cars-shadow: 1px 1px 10px black;
     }
 
     body {
@@ -104,6 +106,35 @@ const GlobalStyle = createGlobalStyle`
         background: url(${bgcolor}) repeat-x top, black;
         background-size: cover;
 
+    }
+
+    //loading bar
+    .loading-bar {
+        height: 4px;
+        width: 100%;
+        background: #f2f2f2;
+        position: relative;
+    }
+
+    .loading-bar-progress {
+        height: 100%;
+        background: #4caf50;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width 0.3s ease-in-out;
+    }
+    .loading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        font-size: 2rem;
+        background-color: #392357;
+        
     }
 
    h1,h2,h3{

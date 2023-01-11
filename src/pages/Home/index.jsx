@@ -4,9 +4,11 @@ import About from "components/About";
 import Contact from "components/Contact";
 import Portfolio from "components/Portfolio";
 import Social from "components/Social";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 import start from "../../assets/star.png";
+import icon from "../../assets/icon.png";
 import { Star, StarPosition } from "./Home.styles";
+import { useState, useEffect } from "react";
 
 import { HomeContainer } from "./Home.styles";
 const Home = () => {
@@ -20,6 +22,7 @@ const Home = () => {
             src={logo}
             alt="Nina Martinho logo homepage"
           />
+
           <p className="subtitle-logo">Game, Concept and Illustrator Artist</p>
           <Social />
           <StarPosition posX="80%" posY="80%" size="100px">
