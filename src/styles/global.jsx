@@ -91,6 +91,8 @@ const GlobalStyle = createGlobalStyle`
         --purple-light-transparent: #f3dcf386;
         --white: #ffff;
         --black: #080008;
+
+        --portfolio-cars-shadow: 1px 1px 10px black;
     }
 
     body {
