@@ -1,23 +1,21 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-  margin: 100px auto;
+  margin: 0 auto;
   padding-bottom: 30px;
   width: 100%;
   position: relative;
 
   box-sizing: border-box;
-  min-height: calc(100vh - 150px);
 
   .logo-container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: center;
     align-items: center;
-    margin: 50px;
-    margin-bottom: 10vh;
-    margin-top: 20vh;
+    margin: 0 50px;
   }
 
   .subtitle-logo {

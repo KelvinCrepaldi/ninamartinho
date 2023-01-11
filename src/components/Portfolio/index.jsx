@@ -1,24 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import projects from "../../database/artstationData.json";
 
 import { Element } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 import {
   PortfolioSelection,
   SelectionLayers,
   GalleryLayer,
+  GalleryMap,
   PortfolioHeader,
   BackButton,
 } from "./portfolio.styles";
 import SectionContainer from "components/SectionContainer";
-import projects from "../../database/projects.json";
-
+import ProjectCardImage from "components/ProjectCardImage";
 const Portfolio = () => {
   const [optionsLayer, setOptionsLayer] = useState("firstLayer");
   const [firstOption, setFirstOption] = useState("");
   const [secondOption, setSecondOption] = useState("");
+  const projects2dConcepts = projects.filter(
+    (project) => project.album === "Concept"
+  );
+  const projects2dIllustrations = projects.filter(
+    (project) => project.album === "Illustrations"
+  );
+  const projects3D = projects.filter((project) => project.album === "3D");
 
+  console.log(projects3D);
   const handleeBacktoFirst = () => setOptionsLayer("firstLayer");
 
   const handleeBacktoSecond = () => setOptionsLayer("secondLayer");
@@ -37,10 +47,21 @@ const Portfolio = () => {
     setOptionsLayer("gallery");
   };
 
-  const renderMapProjects = () =>
-    projects.map((project, index) => {
-      return <p key={index}> {project.title} </p>;
-    });
+  const renderMapProjects = () => {
+    if (firstOption === "3D") {
+      return projects3D.map((project) => (
+        <ProjectCardImage project={project}></ProjectCardImage>
+      ));
+    }
+    if (firstOption === "2D" && secondOption === "Concepts") {
+      return projects2dConcepts.map((project) => (
+        <ProjectCardImage project={project}></ProjectCardImage>
+      ));
+    }
+    return projects2dIllustrations.map((project) => (
+      <ProjectCardImage project={project}></ProjectCardImage>
+    ));
+  };
 
   const layers = () => {
     if (optionsLayer === "firstLayer") {
@@ -61,7 +82,18 @@ const Portfolio = () => {
       return (
         <SelectionLayers>
           <PortfolioHeader>
-            <BackButton onClick={handleeBacktoFirst}>back</BackButton>
+            <BackButton
+              activeClass="active"
+              className="portfolio"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={0}
+              offset={-200}
+              onClick={handleeBacktoFirst}
+            >
+              back
+            </BackButton>
             <h2>{firstOption}</h2>
           </PortfolioHeader>
 
@@ -69,8 +101,8 @@ const Portfolio = () => {
             <button onClick={() => handleSecondLayer("Concepts")}>
               Concepts
             </button>
-            <button onClick={() => handleSecondLayer("Ilustration")}>
-              Ilustrations
+            <button onClick={() => handleSecondLayer("Illustration")}>
+              Illustrations
             </button>
           </div>
         </SelectionLayers>
@@ -81,13 +113,35 @@ const Portfolio = () => {
         <GalleryLayer>
           <PortfolioHeader>
             {firstOption === "3D" ? (
-              <BackButton onClick={handleeBacktoFirst}>back</BackButton>
+              <BackButton
+                activeClass="active"
+                className="portfolio"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={0}
+                offset={-200}
+                onClick={handleeBacktoFirst}
+              >
+                back
+              </BackButton>
             ) : (
-              <BackButton onClick={handleeBacktoSecond}>back</BackButton>
+              <BackButton
+                activeClass="active"
+                className="portfolio"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={0}
+                offset={-200}
+                onClick={handleeBacktoSecond}
+              >
+                back
+              </BackButton>
             )}
             <h2>{`${firstOption} ${secondOption}`}</h2>
           </PortfolioHeader>
-          <div className="GalleryMap">{renderMapProjects()}</div>
+          <GalleryMap>{renderMapProjects()}</GalleryMap>
         </GalleryLayer>
       );
     }
