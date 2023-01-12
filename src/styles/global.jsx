@@ -77,7 +77,9 @@ const GlobalStyle = createGlobalStyle`
         --content-color: rgba(183, 163, 190, 0.445);
         --content-header-color:linear-gradient(140deg, #210041b2 0%, #7911be99 100%);
         --content-shadow:  -7px -5px 1px 0px #db80ff3c;
-        --content-p-size: 1.9rem;
+        --content-p-size: 1.5rem;
+        --content-h3-size: 2.2rem;
+        --content-h3-color: #adabf8;
         --subtitle-logo-color: #d1beff;
         --social-color: #bfb1ff;
         --social-shadow: -1px 2px 2px #210041b2;
@@ -97,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
         --portfolio-card-font-size: 1.4rem;
 
         --contact-color: #f3dcf3;
-        --contact-color-hover: #b8a0ee;
+        --contact-color-hover: #f3dcf3;
         --contact-font-size: 1.7rem;
         --contact-icon-size: 3rem;
         --contact-icon-color: #f3dcf3;
