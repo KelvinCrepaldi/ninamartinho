@@ -4,8 +4,6 @@ import { Element } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
 
-import photo from "../../assets/photo.png";
-
 const About = () => {
   return (
     <SectionContainer
@@ -13,7 +11,6 @@ const About = () => {
       title="About"
     >
       <Element name="about" />
-      <img src={photo}></img>
       <p>
         My name is Nina Martinho and I am a 2D and 3D artist who loves creating
         imersive stories and fascinating characters. I'm from Brazil and I've

@@ -24,15 +24,17 @@ const Portfolio = () => {
   const [optionsLayer, setOptionsLayer] = useState("firstLayer");
   const [firstOption, setFirstOption] = useState("");
   const [secondOption, setSecondOption] = useState("");
+
   const projects2dConcepts = projects.filter(
     (project) => project.album === "Concept"
   );
+
   const projects2dIllustrations = projects.filter(
     (project) => project.album === "Illustrations"
   );
+
   const projects3D = projects.filter((project) => project.album === "3D");
 
-  console.log(projects3D);
   const handleeBacktoFirst = () => setOptionsLayer("firstLayer");
 
   const handleeBacktoSecond = () => setOptionsLayer("secondLayer");
@@ -129,7 +131,7 @@ const Portfolio = () => {
               <img src={projects2dIllustrations[1].small_img_url} />
               <img src={projects2dIllustrations[2].small_img_url} />
               <div>
-                <span>Illustrations</span>
+                <span>Illustration</span>
               </div>
             </AlbumButton>
           </div>
