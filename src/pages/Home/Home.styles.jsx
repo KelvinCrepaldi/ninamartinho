@@ -28,6 +28,7 @@ export const HomeContainer = styled.div`
     width: 40%;
     height: fit-content;
     max-width: 500px;
+    min-width: 350px;
     transition: 0.1s;
   }
 

@@ -4,6 +4,8 @@ import { Element } from "react-scroll";
 export const Container = styled(Element)`
   margin: 60vh auto;
 
+  padding-bottom: 30px;
+
   width: calc(100% - 30px);
   min-height: calc(100vh - 400px);
   overflow: hidden;
@@ -17,13 +19,17 @@ export const Container = styled(Element)`
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
+  &:last-of-type {
+    margin-bottom: 30px;
+  }
+
   .container-title {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    padding: 30px 15px 20px;
+    padding: 25px 15px 5px;
 
     background: var(--content-header-color);
   }
@@ -44,12 +50,42 @@ export const Container = styled(Element)`
     margin-top: 0px;
   }
 
-  p {
-    padding: 20px;
+  p,
+  ul {
+    margin: 0 auto 90px;
     max-width: 1000px;
-    margin: 30px auto;
-    text-align: center;
+
     font-size: var(--content-p-size);
+    text-shadow: 2px 2px 2px var(--purple-strong);
+  }
+  p {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  ul {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  li svg {
+    color: var(--purple-strong);
+    margin-right: 10px;
+  }
+
+  h3 {
+    color: var(--content-h3-color);
+    padding: 20px 0 0 0;
+    max-width: 1000px;
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: var(--content-h3-size);
     text-shadow: 2px 2px 2px var(--purple-strong);
   }
 

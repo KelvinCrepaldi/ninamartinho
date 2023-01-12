@@ -6,9 +6,9 @@ import {
   OptionsDisplay,
 } from "./header.styles";
 import { useState } from "react";
-import HeaderImage from "../../assets/icon.png";
+import icon5 from "../../assets/icon5.png";
 
-const Header = () => {
+const Header = ({ setOptionsLayer, setFirstOption, setSecondOption }) => {
   const [optionsActivate, setOptionsActivate] = useState(false);
 
   const handleScrollToTop = () => window.scroll(0, 0);
@@ -17,10 +17,26 @@ const Header = () => {
     setOptionsActivate(value);
   };
 
+  const handdleSetConcepts = () => {
+    setOptionsLayer("gallery");
+    setFirstOption("2D");
+    setSecondOption("Concepts");
+  };
+  const handdleSetIllustrations = () => {
+    setOptionsLayer("gallery");
+    setFirstOption("2D");
+    setSecondOption("Illustration");
+  };
+  const handdleSet3D = () => {
+    setOptionsLayer("gallery");
+    setFirstOption("3D");
+    setSecondOption("");
+  };
+
   return (
     <HeaderContainer>
       <LogoContainer onClick={handleScrollToTop}>
-        <img src={HeaderImage} alt="header logo" />
+        <img src={icon5} alt="header logo" />
         <span className="logo-text">Nina Martinho</span>
       </LogoContainer>
       <NavMenu>
@@ -84,7 +100,8 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={0}
-                    offset={-200}
+                    offset={-50}
+                    onClick={handdleSetConcepts}
                   >
                     Concepts
                   </NavLink>
@@ -97,7 +114,8 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={0}
-                    offset={-200}
+                    offset={-50}
+                    onClick={handdleSetIllustrations}
                   >
                     Ilustrations
                   </NavLink>
@@ -111,7 +129,8 @@ const Header = () => {
                     spy={true}
                     smooth={true}
                     duration={0}
-                    offset={-200}
+                    offset={-50}
+                    onClick={handdleSet3D}
                   >
                     Projects
                   </NavLink>

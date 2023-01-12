@@ -16,6 +16,12 @@ export const ContactContent = styled.div`
   ul li {
     margin: 15px;
     font-size: var(--contact-font-size);
+    text-align: center;
+  }
+
+  ul li:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
   }
 
   ul li a {
@@ -25,6 +31,7 @@ export const ContactContent = styled.div`
   }
 
   svg {
+    width: 50px;
     color: var(--contact-color);
     margin-right: 0;
   }
@@ -38,7 +45,7 @@ export const ContactContent = styled.div`
 
   .link {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 
     justify-content: center;
   }
