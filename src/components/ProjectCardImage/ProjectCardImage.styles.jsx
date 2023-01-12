@@ -2,11 +2,13 @@ import styled from "styled-components";
 
 export const Card = styled.div`
   position: relative;
-  margin: 20px;
+  margin: 20px auto;
 
   width: 30%;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 300px;
+  max-height: 300px;
 
   border-radius: 10px;
   box-shadow: var(--portfolio-cars-shadow);
