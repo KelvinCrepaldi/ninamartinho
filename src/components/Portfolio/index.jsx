@@ -20,11 +20,14 @@ import {
 } from "./portfolio.styles";
 import SectionContainer from "components/SectionContainer";
 import ProjectCardImage from "components/ProjectCardImage";
-const Portfolio = () => {
-  const [optionsLayer, setOptionsLayer] = useState("firstLayer");
-  const [firstOption, setFirstOption] = useState("");
-  const [secondOption, setSecondOption] = useState("");
-
+const Portfolio = ({
+  optionsLayer,
+  setOptionsLayer,
+  firstOption,
+  setFirstOption,
+  secondOption,
+  setSecondOption,
+}) => {
   const projects2dConcepts = projects.filter(
     (project) => project.album === "Concept"
   );
@@ -188,7 +191,7 @@ const Portfolio = () => {
               spy={true}
               smooth={true}
               duration={0}
-              offset={-200}
+              offset={-100}
               onClick={handleeBacktoFirst}
             >
               <FontAwesomeIcon
@@ -205,7 +208,7 @@ const Portfolio = () => {
               spy={true}
               smooth={true}
               duration={0}
-              offset={-200}
+              offset={-100}
               onClick={handleeBacktoSecond}
             >
               <FontAwesomeIcon

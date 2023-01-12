@@ -23,17 +23,18 @@ export const HeaderContainer = styled.header`
 `;
 
 export const LogoContainer = styled.div`
+  cursor: pointer;
   .logo-text {
     position: absolute;
-    top: 40px;
-    left: 110px;
+    top: 25px;
+    left: 80px;
     font-size: 1rem;
   }
 
   img {
-    height: 100px;
+    height: 70px;
 
-    animation: headerlogoanimation 2s infinite alternate-reverse;
+    animation: headerlogoanimation 3s infinite alternate-reverse;
   }
 
   @keyframes headerlogoanimation {
@@ -44,7 +45,7 @@ export const LogoContainer = styled.div`
     }
     to {
       -webkit-filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.2));
-      filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.4));
+      filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.7));
       transform: scale(1.1);
     }
   }

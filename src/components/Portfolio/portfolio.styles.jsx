@@ -25,7 +25,7 @@ export const CloudButton = styled.button`
   position: relative;
   border: none;
   width: 300px;
-  height: 300px;
+  height: 170px;
   margin: 20px;
   transition: 0.5s;
   cursor: pointer;
@@ -145,6 +145,7 @@ export const GalleryMap = styled.div`
   flex-wrap: wrap;
   box-shadow: 1px 1px 5px inset rgb(0, 0, 0, 0.4);
   overflow-y: scroll;
+  justify-content: center;
 `;
 
 export const PortfolioHeader = styled.div`
@@ -162,7 +163,7 @@ export const BackButton = styled(Link)`
   align-items: center;
 
   padding: 10px;
-  margin: 30px 0px;
+  margin: 14px 0px;
 
   height: 60px;
   width: 300px;
