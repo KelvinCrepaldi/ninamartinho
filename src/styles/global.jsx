@@ -92,7 +92,15 @@ const GlobalStyle = createGlobalStyle`
         --white: #ffff;
         --black: #080008;
 
-        --portfolio-cars-shadow: 1px 1px 10px black;
+        --portfolio-cards-background: radial-gradient(circle, rgba(255,255,255,0) 44%, rgba(77,65,159,0.8) 100%);;
+        --portfolio-card-shadow: 1px 1px 10px black;
+        --portfolio-card-font-size: 1.4rem;
+
+        --contact-color: #f3dcf3;
+        --contact-color-hover: #b8a0ee;
+        --contact-font-size: 1.7rem;
+        --contact-icon-size: 3rem;
+        --contact-icon-color: #f3dcf3;
     }
 
     body {
