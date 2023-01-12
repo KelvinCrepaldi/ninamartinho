@@ -25,15 +25,14 @@ export const HomeContainer = styled.div`
   }
 
   img.logo-homepage {
-    width: 100%;
+    width: 40%;
     height: fit-content;
-    max-width: 800px;
-    transition: 2s;
+    max-width: 500px;
+    transition: 0.1s;
   }
 
   img.logo-homepage:hover {
     transform: scale(1.04);
-    opacity: 0.9;
   }
 `;
 

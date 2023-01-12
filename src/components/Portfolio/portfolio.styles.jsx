@@ -41,6 +41,7 @@ export const AlbumButton = styled.button`
   width: 300px;
   height: 300px;
   margin: 30px;
+
   & img {
     top: 20px;
     left: 20px;
@@ -76,6 +77,26 @@ export const AlbumButton = styled.button`
     color: var(--purple-light);
     text-shadow: var(--social-shadow);
     font-size: 2rem;
+  }
+
+  &:hover {
+    & img:nth-child(1) {
+      transform: translateX(-40px) translateY(40px);
+    }
+    & img:nth-child(2) {
+    }
+    & img:nth-child(3) {
+      transform: translateX(40px) translateY(-40px);
+    }
+    & > div span {
+      transform: translateX(-40px) translateY(40px);
+    }
+  }
+
+  & > img:nth-child(1),
+  & > img:nth-child(3),
+  & > div span {
+    transition: 0.5s;
   }
 `;
 
@@ -114,8 +135,6 @@ export const GalleryLayer = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 100%;
-
-  box-shadow: 1px 1px 1px black;
 `;
 
 export const GalleryMap = styled.div`
@@ -124,8 +143,7 @@ export const GalleryMap = styled.div`
   min-height: 450px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-
+  box-shadow: 1px 1px 5px inset rgb(0, 0, 0, 0.4);
   overflow-y: scroll;
 `;
 
