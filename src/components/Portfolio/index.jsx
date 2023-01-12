@@ -4,7 +4,9 @@ import projects from "../../database/artstationData.json";
 import { Element } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
+import { faChevronCircleLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
+import cloud from "../../assets/cloud.svg";
 
 import {
   PortfolioSelection,
@@ -13,6 +15,8 @@ import {
   GalleryMap,
   PortfolioHeader,
   BackButton,
+  CloudButton,
+  AlbumButton,
 } from "./portfolio.styles";
 import SectionContainer from "components/SectionContainer";
 import ProjectCardImage from "components/ProjectCardImage";
@@ -68,12 +72,22 @@ const Portfolio = () => {
       return (
         <SelectionLayers>
           <PortfolioHeader>
-            <h2>Projecs</h2>
+            <h2>Projects</h2>
           </PortfolioHeader>
 
           <div className="buttonsContainer">
-            <button onClick={() => handleFirstOption("2D")}>2D</button>
-            <button onClick={() => handleFirstOption("3D")}>3D</button>
+            <CloudButton
+              imgBackground={cloud}
+              onClick={() => handleFirstOption("2D")}
+            >
+              <span className="cloud-text">2D</span>
+            </CloudButton>
+            <CloudButton
+              imgBackground={cloud}
+              onClick={() => handleFirstOption("3D")}
+            >
+              <span className="cloud-text">3D</span>
+            </CloudButton>
           </div>
         </SelectionLayers>
       );
@@ -82,6 +96,7 @@ const Portfolio = () => {
       return (
         <SelectionLayers>
           <PortfolioHeader>
+            <h2>{firstOption}</h2>
             <BackButton
               activeClass="active"
               className="portfolio"
@@ -92,18 +107,31 @@ const Portfolio = () => {
               offset={-200}
               onClick={handleeBacktoFirst}
             >
-              back
+              <FontAwesomeIcon
+                className="returnButton"
+                icon={faChevronCircleLeft}
+              />
+              Return
             </BackButton>
-            <h2>{firstOption}</h2>
           </PortfolioHeader>
 
           <div className="buttonsContainer">
-            <button onClick={() => handleSecondLayer("Concepts")}>
-              Concepts
-            </button>
-            <button onClick={() => handleSecondLayer("Illustration")}>
-              Illustrations
-            </button>
+            <AlbumButton onClick={() => handleSecondLayer("Concepts")}>
+              <img src={projects2dConcepts[0].small_img_url} />
+              <img src={projects2dConcepts[1].small_img_url} />
+              <img src={projects2dConcepts[2].small_img_url} />
+              <div>
+                <span>Concepts</span>
+              </div>
+            </AlbumButton>
+            <AlbumButton onClick={() => handleSecondLayer("Illustration")}>
+              <img src={projects2dIllustrations[0].small_img_url} />
+              <img src={projects2dIllustrations[1].small_img_url} />
+              <img src={projects2dIllustrations[2].small_img_url} />
+              <div>
+                <span>Illustrations</span>
+              </div>
+            </AlbumButton>
           </div>
         </SelectionLayers>
       );
@@ -112,6 +140,7 @@ const Portfolio = () => {
       return (
         <GalleryLayer>
           <PortfolioHeader>
+            <h2>{`${firstOption} ${secondOption}`}</h2>
             {firstOption === "3D" ? (
               <BackButton
                 activeClass="active"
@@ -123,7 +152,11 @@ const Portfolio = () => {
                 offset={-200}
                 onClick={handleeBacktoFirst}
               >
-                back
+                <FontAwesomeIcon
+                  className="returnButton"
+                  icon={faChevronCircleLeft}
+                />
+                Return
               </BackButton>
             ) : (
               <BackButton
@@ -136,12 +169,50 @@ const Portfolio = () => {
                 offset={-200}
                 onClick={handleeBacktoSecond}
               >
-                back
+                <FontAwesomeIcon
+                  className="returnButton"
+                  icon={faChevronCircleLeft}
+                />
+                Return
               </BackButton>
             )}
-            <h2>{`${firstOption} ${secondOption}`}</h2>
           </PortfolioHeader>
           <GalleryMap>{renderMapProjects()}</GalleryMap>
+          {firstOption === "3D" ? (
+            <BackButton
+              activeClass="active"
+              className="portfolio"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={0}
+              offset={-200}
+              onClick={handleeBacktoFirst}
+            >
+              <FontAwesomeIcon
+                className="returnButton"
+                icon={faChevronCircleLeft}
+              />
+              Return
+            </BackButton>
+          ) : (
+            <BackButton
+              activeClass="active"
+              className="portfolio"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={0}
+              offset={-200}
+              onClick={handleeBacktoSecond}
+            >
+              <FontAwesomeIcon
+                className="returnButton"
+                icon={faChevronCircleLeft}
+              />
+              Return
+            </BackButton>
+          )}
         </GalleryLayer>
       );
     }
