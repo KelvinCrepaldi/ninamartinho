@@ -86,7 +86,7 @@ export const Container = styled(Element)`
     margin: 30px auto 0;
     text-align: center;
     font-size: var(--content-h3-size);
-    text-shadow: 2px 2px 2px var(--purple-strong);
+    text-shadow: var(--content-h3-shadow);
   }
 
   img {

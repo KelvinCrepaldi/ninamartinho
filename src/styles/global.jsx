@@ -79,7 +79,8 @@ const GlobalStyle = createGlobalStyle`
         --content-shadow:  -7px -5px 1px 0px #db80ff3c;
         --content-p-size: 1.5rem;
         --content-h3-size: 2.2rem;
-        --content-h3-color: #adabf8;
+        --content-h3-color: rgb(245, 166, 255);
+        --content-h3-shadow: 2px 2px 2px #a7338a;
         --subtitle-logo-color: #d1beff;
         --social-color: #bfb1ff;
         --social-shadow: -1px 2px 2px #210041b2;

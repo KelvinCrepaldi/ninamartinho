@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Showrell from "components/Showreel";
 import About from "components/About";
 import Contact from "components/Contact";
 import Portfolio from "components/Portfolio";
@@ -37,6 +38,7 @@ const Home = () => {
           secondOption={secondOption}
           setSecondOption={setSecondOption}
         />
+        <Showrell />
         <About />
         <Contact />
       </HomeContainer>

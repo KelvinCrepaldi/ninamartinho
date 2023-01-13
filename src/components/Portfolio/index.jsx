@@ -1,12 +1,9 @@
-import { useState, useEffect } from "react";
 import projects from "../../database/artstationData.json";
 
 import { Element } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 import { faChevronCircleLeft } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-scroll";
-import cloud from "../../assets/cloud.svg";
 
 import {
   PortfolioSelection,
@@ -15,11 +12,11 @@ import {
   GalleryMap,
   PortfolioHeader,
   BackButton,
-  CloudButton,
   AlbumButton,
 } from "./portfolio.styles";
 import SectionContainer from "components/SectionContainer";
 import ProjectCardImage from "components/ProjectCardImage";
+
 const Portfolio = ({
   optionsLayer,
   setOptionsLayer,
@@ -81,18 +78,23 @@ const Portfolio = ({
           </PortfolioHeader>
 
           <div className="buttonsContainer">
-            <CloudButton
-              imgBackground={cloud}
-              onClick={() => handleFirstOption("2D")}
-            >
-              <span className="cloud-text">2D</span>
-            </CloudButton>
-            <CloudButton
-              imgBackground={cloud}
-              onClick={() => handleFirstOption("3D")}
-            >
-              <span className="cloud-text">3D</span>
-            </CloudButton>
+            <AlbumButton onClick={() => handleFirstOption("2D")}>
+              <img src={projects2dConcepts[0].small_img_url} />
+              <img src={projects2dIllustrations[0].small_img_url} />
+              <img src={projects2dIllustrations[3].small_img_url} />
+              <div>
+                <span>2D</span>
+              </div>
+            </AlbumButton>
+
+            <AlbumButton onClick={() => handleFirstOption("3D")}>
+              <img src={projects3D[0].small_img_url} />
+              <img src={projects3D[1].small_img_url} />
+              <img src={projects3D[2].small_img_url} />
+              <div>
+                <span>3D</span>
+              </div>
+            </AlbumButton>
           </div>
         </SelectionLayers>
       );
@@ -109,7 +111,7 @@ const Portfolio = ({
               spy={true}
               smooth={true}
               duration={0}
-              offset={-200}
+              offset={-100}
               onClick={handleeBacktoFirst}
             >
               <FontAwesomeIcon
@@ -154,7 +156,7 @@ const Portfolio = ({
                 spy={true}
                 smooth={true}
                 duration={0}
-                offset={-200}
+                offset={-100}
                 onClick={handleeBacktoFirst}
               >
                 <FontAwesomeIcon
@@ -171,7 +173,7 @@ const Portfolio = ({
                 spy={true}
                 smooth={true}
                 duration={0}
-                offset={-200}
+                offset={-100}
                 onClick={handleeBacktoSecond}
               >
                 <FontAwesomeIcon
@@ -183,41 +185,6 @@ const Portfolio = ({
             )}
           </PortfolioHeader>
           <GalleryMap>{renderMapProjects()}</GalleryMap>
-          {firstOption === "3D" ? (
-            <BackButton
-              activeClass="active"
-              className="portfolio"
-              to="portfolio"
-              spy={true}
-              smooth={true}
-              duration={0}
-              offset={-100}
-              onClick={handleeBacktoFirst}
-            >
-              <FontAwesomeIcon
-                className="returnButton"
-                icon={faChevronCircleLeft}
-              />
-              Return
-            </BackButton>
-          ) : (
-            <BackButton
-              activeClass="active"
-              className="portfolio"
-              to="portfolio"
-              spy={true}
-              smooth={true}
-              duration={0}
-              offset={-100}
-              onClick={handleeBacktoSecond}
-            >
-              <FontAwesomeIcon
-                className="returnButton"
-                icon={faChevronCircleLeft}
-              />
-              Return
-            </BackButton>
-          )}
         </GalleryLayer>
       );
     }
