@@ -9,11 +9,12 @@ const Showrell = () => {
     <SectionContainer icon={""} title={"Showreel 2022"}>
       <Element name="showreel" />
       <FrameVideo
-        src="https://www.youtube-nocookie.com/embed/dJFyk6KcYVE"
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/dJFyk6KcYVE"
         title="Showreel 2022"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
       ></FrameVideo>
     </SectionContainer>
   );
