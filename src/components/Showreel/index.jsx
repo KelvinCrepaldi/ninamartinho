@@ -3,10 +3,14 @@ import { Element } from "react-scroll";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FrameVideo } from "./Showreel.styles";
+import { faFilm } from "@fortawesome/free-solid-svg-icons";
 
 const Showrell = () => {
   return (
-    <SectionContainer icon={""} title={"Showreel 2022"}>
+    <SectionContainer
+      icon={<FontAwesomeIcon icon={faFilm} />}
+      title={"Showreel 2022"}
+    >
       <Element name="showreel" />
       <FrameVideo
         width="100%"
