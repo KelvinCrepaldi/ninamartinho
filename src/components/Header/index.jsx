@@ -41,19 +41,6 @@ const Header = ({ setOptionsLayer, setFirstOption, setSecondOption }) => {
       </LogoContainer>
       <NavMenu>
         <ul>
-          <li>
-            <NavLink
-              activeClass="active"
-              className="about"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={0}
-              offset={-200}
-            >
-              About
-            </NavLink>
-          </li>
           <li
             onMouseOut={() => handdleActivateMenu(false)}
             onMouseOver={() => handdleActivateMenu(true)}
@@ -70,6 +57,33 @@ const Header = ({ setOptionsLayer, setFirstOption, setSecondOption }) => {
               Portfolio
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              activeClass="active"
+              className="showreel"
+              to="showreel"
+              spy={true}
+              smooth={true}
+              duration={0}
+              offset={-200}
+            >
+              Showreel
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeClass="active"
+              className="about"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={0}
+              offset={-200}
+            >
+              About
+            </NavLink>
+          </li>
+
           <li>
             <NavLink
               activeClass="active"
