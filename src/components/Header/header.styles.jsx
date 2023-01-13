@@ -68,7 +68,7 @@ export const NavMenu = styled.nav`
 export const OptionsDisplay = styled.div`
   position: absolute;
   top: 20px;
-  left: 80px;
+  left: 10px;
   width: 300px;
 
   overflow: hidden;
