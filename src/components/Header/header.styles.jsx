@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 export const HeaderContainer = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   box-sizing: border-box;
   position: fixed;
@@ -11,8 +11,8 @@ export const HeaderContainer = styled.header`
   z-index: 1;
 
   width: 100vw;
-  height: 90px;
-  padding: 0 30px;
+  height: 60px;
+  padding: 0 10px;
 
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -20,35 +20,6 @@ export const HeaderContainer = styled.header`
     rgba(0, 0, 0, 0) 0%,
     rgba(19, 0, 34, 0.4) 60%
   );
-`;
-
-export const LogoContainer = styled.div`
-  cursor: pointer;
-  .logo-text {
-    position: absolute;
-    top: 25px;
-    left: 80px;
-    font-size: 1rem;
-  }
-
-  img {
-    height: 70px;
-
-    animation: headerlogoanimation 3s infinite alternate-reverse;
-  }
-
-  @keyframes headerlogoanimation {
-    from {
-      -webkit-filter: drop-shadow(0px 0px 3px rgb(255, 255, 255, 0.2));
-      filter: drop-shadow(0px 0px 3px rgb(255, 255, 255, 0.2));
-      transform: scale(1);
-    }
-    to {
-      -webkit-filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.2));
-      filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.7));
-      transform: scale(1.1);
-    }
-  }
 `;
 
 export const NavMenu = styled.nav`

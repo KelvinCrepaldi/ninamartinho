@@ -6,17 +6,16 @@ export const Container = styled(Element)`
 
   padding-bottom: 30px;
 
-  width: calc(100% - 30px);
+  width: calc(100%);
   min-height: calc(100vh - 400px);
   overflow: hidden;
-  border-radius: 5px;
 
   background: var(--content-color);
   color: var(--purple-light);
 
   box-shadow: var(--content-shadow);
 
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(5px);
 
   &:last-of-type {
@@ -29,7 +28,7 @@ export const Container = styled(Element)`
     justify-content: center;
     align-items: center;
 
-    padding: 25px 15px 5px;
+    padding: 45px 15px 15px;
 
     background: var(--content-header-color);
   }
@@ -87,14 +86,5 @@ export const Container = styled(Element)`
     text-align: center;
     font-size: var(--content-h3-size);
     text-shadow: var(--content-h3-shadow);
-  }
-
-  img {
-    display: block;
-    width: 40%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border-radius: 10px;
-    filter: drop-shadow(3px 3px 2px rgb(0, 0, 0, 0.5));
   }
 `;

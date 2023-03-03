@@ -9,13 +9,13 @@ export const HomeContainer = styled.div`
   box-sizing: border-box;
 
   .logo-container {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     position: relative;
     justify-content: center;
     align-items: center;
-    margin: 0 50px;
+    margin: 100px;
   }
 
   .subtitle-logo {
@@ -31,58 +31,24 @@ export const HomeContainer = styled.div`
     min-width: 350px;
     transition: 0.1s;
   }
-
-  img.logo-homepage:hover {
-    transform: scale(1.04);
-  }
 `;
 
-export const Star = styled.img`
-  position: absolute;
-  width: 100%;
-  height: 100%;
+export const DownloadCVLink = styled.a`
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--download-cv-color);
+  font-size: 1.5rem;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid var(--download-cv-color);
+  border-radius: 5px;
+  transition: 0.4s;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: 1px 1px 3px black, inset 1px 1px 3px black;
 
-  filter: drop-shadow(0 0 0.75rem white);
-  animation: starmove 2s infinite alternate;
-  animation-delay: ${(props) => props.delayTime};
-  @keyframes starmove {
-    0% {
-      transform: scale(1.1);
-      filter: drop-shadow(0 0 1rem white);
-    }
-
-    20%,
-    40%,
-    60%,
-    80%,
-    90%,
-    95% {
-      filter: drop-shadow(0 0 0.6rem white);
-    }
-    23%,
-    43%,
-    63%,
-    83%,
-    93%,
-    97% {
-      filter: drop-shadow(0 0 0.75rem white);
-    }
-
-    100% {
-      transform: scale(0.2);
-      filter: drop-shadow(0 0 0.75rem white);
-    }
+  &:hover {
+    transform: scale(1.1);
   }
-
-  z-index: -3;
-`;
-
-export const StarPosition = styled.div`
-  position: absolute;
-
-  top: ${(props) => props.posY};
-  left: ${(props) => props.posX};
-
-  width: ${(props) => props.size};
-  height: ${(props) => props.size};
 `;

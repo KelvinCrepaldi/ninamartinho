@@ -72,11 +72,11 @@ const GlobalStyle = createGlobalStyle`
         --nav-color-hover:#bfb1ff; 
         --nav-color-hover-shadow: #8280ff;
         --nav-color-hover-transparent:#4c41a299;
-        --nav-link-fontsize: 1.9rem;
+        --nav-link-fontsize: 1.5rem;
 
-        --content-color: rgba(183, 163, 190, 0.445);
-        --content-header-color:linear-gradient(140deg, #210041b2 0%, #7911be99 100%);
-        --content-shadow:  -7px -5px 1px 0px #db80ff3c;
+        --content-color: linear-gradient(180deg, #92749e 30%, #756fb7ae 99.47%);
+        --content-header-color:linear-gradient(180deg, #5a289ca2 10%, transparent 100%);
+        --content-shadow:  0px 0px 0px 1px #db80ff3c;
         --content-p-size: 1.5rem;
         --content-h3-size: 2.2rem;
         --content-h3-color: rgb(245, 166, 255);
@@ -84,6 +84,7 @@ const GlobalStyle = createGlobalStyle`
         --subtitle-logo-color: #d1beff;
         --social-color: #bfb1ff;
         --social-shadow: -1px 2px 2px #210041b2;
+        --download-cv-color:#d1beff;
         
         --color-white: #ecfbff;
         --shadow-gray: #797979;
@@ -95,9 +96,14 @@ const GlobalStyle = createGlobalStyle`
         --white: #ffff;
         --black: #080008;
 
-        --portfolio-cards-background: radial-gradient(circle, rgba(255,255,255,0) 44%, rgba(77,65,159,0.8) 100%);;
+        --portfolio-card-background: linear-gradient(88.8deg, rgba(217, 217, 217, 0.11) 24.19%, rgba(217, 217, 217, 0) 98.58%);
         --portfolio-card-shadow: 1px 1px 10px black;
         --portfolio-card-font-size: 1.4rem;
+        --portfolio-card-textshadow: none;
+        --portfolio-card-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        --portfolio-card-h1-size: 1.5rem;
+        --portfolio-card-p-size: 1rem;
+        --portfolio-card-hover-color:#370d4b75;
 
         --contact-color: #f3dcf3;
         --contact-color-hover: #f3dcf3;
@@ -112,10 +118,11 @@ const GlobalStyle = createGlobalStyle`
         color: var(--color-white);
         text-shadow: 1px 1px 2px var(--shadow-gray);
         overflow-x: hidden;
+        text-rendering: optimizeLegibility;
         
 
-        background: url(${bgcolor}) repeat-x top, black;
-        background-size: cover;
+        background: url(${bgcolor}) repeat-x top, #2a013d;
+        background-size: 100%;
 
     }
 
