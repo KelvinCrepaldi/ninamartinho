@@ -18,10 +18,17 @@ export const ProjectCardContainer = styled.div`
   min-height: 350px;
   position: relative;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
   margin: 25px auto 40px;
   border-radius: 10px;
   box-shadow: -1px -1px 5px #00000011 inset;
+  background: linear-gradient(
+    104deg,
+    rgba(148, 121, 214, 1) 31%,
+    rgba(160, 131, 196, 0.4920343137254902) 100%
+  );
+  top: 0;
+  left: 0;
 
   a {
     text-decoration: none;
@@ -49,9 +56,43 @@ export const ProjectCardContainer = styled.div`
   }
 
   &:hover {
-    transition: 1s;
     box-shadow: 2px 2px 10px var(--portfolio-card-hover-color);
-    transform: scale(1.1);
-    z-index: 3;
+
+    top: 3px;
+    left: -3px;
+  }
+
+  .box1,
+  .box2 {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    transition: 0.2s;
+    box-shadow: inset 0px 0px 2px #ffffff;
+    background: var(--portfolio-card-background);
+    box-shadow: none;
+  }
+
+  .box1 {
+    z-index: -1;
+  }
+
+  .box2 {
+    z-index: -2;
+  }
+
+  &:hover .box1 {
+    top: -7px;
+    left: 7px;
+    box-shadow: inset 0px 0px 2px #ffffff;
+  }
+
+  &:hover .box2 {
+    top: -14px;
+    left: 14px;
+    box-shadow: inset 0px 0px 2px #ffffff;
   }
 `;

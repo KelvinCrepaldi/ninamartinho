@@ -16,7 +16,7 @@ const ProjectSlider = ({ projects }) => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
       style={{
-        "--swiper-pagination-color": "#7c12c2",
+        "--swiper-pagination-color": "#645097",
         "--swiper-pagination-bullet-inactive-color": "#1a1a1a",
         "--swiper-pagination-bullet-inactive-opacity": "1",
         "--swiper-pagination-bullet-size": "16px",

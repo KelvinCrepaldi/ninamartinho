@@ -74,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
         --nav-color-hover-transparent:#4c41a299;
         --nav-link-fontsize: 1.5rem;
 
-        --content-color: linear-gradient(180deg, #92749e 30%, #756fb7ae 99.47%);
+        --content-color: linear-gradient(180deg, #92749e 30%, #756fb7ae 95.47%, #0000001a 100%);
         --content-header-color:linear-gradient(180deg, #5a289ca2 10%, transparent 100%);
         --content-shadow:  0px 0px 0px 1px #db80ff3c;
         --content-p-size: 1.5rem;
@@ -110,6 +110,8 @@ const GlobalStyle = createGlobalStyle`
         --contact-font-size: 1.7rem;
         --contact-icon-size: 3rem;
         --contact-icon-color: #f3dcf3;
+
+        --card-backgroundColor: #92749e;
     }
 
     body {
