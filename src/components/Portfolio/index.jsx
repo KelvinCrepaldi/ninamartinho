@@ -4,14 +4,11 @@ import { Element } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  ProjectsSectionsContainers,
-  ProjectsMap,
-  FrameVideo,
-} from "./portfolio.styles";
+import { ProjectsSectionsContainers, FrameVideo } from "./portfolio.styles";
 import SectionContainer from "components/SectionContainer";
 import ProjectsSection from "components/ProjectsSection";
-import ProjectCard from "components/ProjectCard";
+import ProjectSlider from "components/ProjectsSlider";
+
 import Muscadine from "components/Muscadine";
 
 const Portfolio = ({}) => {
@@ -34,35 +31,21 @@ const Portfolio = ({}) => {
       <ProjectsSectionsContainers>
         <Element name="Illustrations" />
         <ProjectsSection title="Illustrations">
-          <ProjectsMap>
-            {projectsIllustrations.map((project, index) => {
-              return <ProjectCard key={index} project={project} />;
-            })}
-          </ProjectsMap>
+          <ProjectSlider projects={projectsIllustrations} />
         </ProjectsSection>
 
         <Element name="Concepts" />
         <ProjectsSection title="Concepts">
-          <ProjectsMap>
-            {projectsConcepts.map((project, index) => {
-              return <ProjectCard key={index} project={project} />;
-            })}
-          </ProjectsMap>
+          <ProjectSlider projects={projectsConcepts} />
         </ProjectsSection>
 
         <Element name="3D" />
         <ProjectsSection title="3D">
-          <ProjectsMap>
-            {projects3D.map((project, index) => {
-              return <ProjectCard key={index} project={project} />;
-            })}
-          </ProjectsMap>
+          <ProjectSlider projects={projects3D} />
         </ProjectsSection>
       </ProjectsSectionsContainers>
-      <ProjectsSection
-        title="Showreel 2022
-"
-      >
+
+      <ProjectsSection title="Showreel 2022">
         <Element name="showreel" />
         <FrameVideo
           width="100%"

@@ -1,11 +1,5 @@
 import styled from "styled-components";
 export const ProjectsSectionsContainers = styled.div``;
-
-export const ProjectsMap = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-`;
 export const FrameVideo = styled.iframe`
   display: block;
   justify-content: center;
@@ -16,4 +10,8 @@ export const FrameVideo = styled.iframe`
   max-height: 500px;
   padding: 5px;
   margin: 40px auto;
+`;
+export const SwipperSpace = styled.div`
+  padding: 20px;
+  display: flex;
 `;

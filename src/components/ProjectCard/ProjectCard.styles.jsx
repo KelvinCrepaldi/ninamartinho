@@ -1,25 +1,27 @@
 import styled from "styled-components";
 
 export const ProjectCardImg = styled.img`
-  display: block;
   width: 250px;
   height: 250px;
-  background-size: 250px;
-  position: relative;
-  z-index: -2;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 `;
 
 export const ProjectCardContainer = styled.div`
   display: flex;
+
+  position: relative;
   flex-direction: column;
-  max-width: 252px;
+  width: 250px;
   background: var(--portfolio-card-background);
-  margin: 8px;
-  min-height: 450px;
+  min-height: 350px;
   position: relative;
   cursor: pointer;
   transition: 0.5s;
-  border: 1px solid transparent;
+  margin: 25px auto 40px;
+  border-radius: 10px;
+  box-shadow: -1px -1px 5px #00000011 inset;
 
   a {
     text-decoration: none;
@@ -47,6 +49,9 @@ export const ProjectCardContainer = styled.div`
   }
 
   &:hover {
+    transition: 1s;
     box-shadow: 2px 2px 10px var(--portfolio-card-hover-color);
+    transform: scale(1.1);
+    z-index: 3;
   }
 `;

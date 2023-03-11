@@ -7,16 +7,26 @@ export const ContactContent = styled.div`
 
   ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     color: var(--contact-color);
+    border-left: 2px solid #ffffff47;
+    border-right: 2px solid #ffffff47;
+  }
+
+  ul div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
   }
 
   ul li {
+    display: flex;
     margin: 15px;
     font-size: var(--contact-font-size);
-    text-align: center;
   }
 
   ul li:hover {
@@ -46,8 +56,7 @@ export const ContactContent = styled.div`
   .link {
     display: flex;
     align-items: center;
-
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .link:hover {
@@ -55,6 +64,12 @@ export const ContactContent = styled.div`
 
     svg {
       color: var(--contact-color-hover);
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    ul {
+      flex-direction: column;
     }
   }
 `;

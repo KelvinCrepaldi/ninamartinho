@@ -6,7 +6,6 @@ const ProjectCard = ({ project }) => {
         <ProjectCardImg src={project.img_url}></ProjectCardImg>
 
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
       </a>
     </ProjectCardContainer>
   );

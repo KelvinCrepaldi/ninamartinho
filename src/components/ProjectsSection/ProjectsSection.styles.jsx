@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const ProjectsSectionContainer = styled.section`
-  display: flex;
-  flex-direction: column;
   margin: 20px auto;
   max-width: 1080px;
+  width: 100%;
   margin-bottom: 100px;
 
   h2 {
