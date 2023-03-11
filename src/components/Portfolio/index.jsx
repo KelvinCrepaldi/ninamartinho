@@ -11,7 +11,7 @@ import ProjectSlider from "components/ProjectsSlider";
 
 import Muscadine from "components/Muscadine";
 
-const Portfolio = ({}) => {
+const Portfolio = () => {
   const projectsConcepts = projects.filter(
     (project) => project.album === "Concept"
   );

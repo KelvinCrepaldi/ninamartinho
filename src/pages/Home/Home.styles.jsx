@@ -19,9 +19,10 @@ export const HomeContainer = styled.div`
   }
 
   .subtitle-logo {
-    font-size: calc(100vw / 70 + 1vh);
+    font-size: calc(100vw / 70 + 1.5vh);
     color: var(--subtitle-logo-color);
     text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.4);
+    text-align: center;
   }
 
   img.logo-homepage {
@@ -45,8 +46,8 @@ export const DownloadCVLink = styled.a`
   border: 1px solid var(--download-cv-color);
   border-radius: 5px;
   transition: 0.4s;
-  text-shadow: 1px 1px 1px black;
-  box-shadow: 1px 1px 3px black, inset 1px 1px 3px black;
+  text-shadow: 1px 1px 1px #210041b2;
+  box-shadow: -1px 2px 2px #210041b2, inset -1px 2px 2px #210041b2;
 
   &:hover {
     transform: scale(1.1);

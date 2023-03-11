@@ -22,11 +22,7 @@ export const ProjectCardContainer = styled.div`
   margin: 25px auto 40px;
   border-radius: 10px;
   box-shadow: -1px -1px 5px #00000011 inset;
-  background: linear-gradient(
-    104deg,
-    rgba(148, 121, 214, 1) 31%,
-    rgba(160, 131, 196, 0.4920343137254902) 100%
-  );
+  background: var(--card-backgroundColor);
   top: 0;
   left: 0;
 

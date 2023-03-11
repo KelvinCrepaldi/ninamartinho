@@ -16,11 +16,11 @@ const ProjectSlider = ({ projects }) => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
       style={{
-        "--swiper-pagination-color": "#645097",
-        "--swiper-pagination-bullet-inactive-color": "#1a1a1a",
+        "--swiper-pagination-color": "#555097",
+        "--swiper-pagination-bullet-inactive-color": "#f3dcf388",
         "--swiper-pagination-bullet-inactive-opacity": "1",
         "--swiper-pagination-bullet-size": "16px",
-        "--swiper-pagination-bullet-horizontal-gap": "6px",
+        "--swiper-pagination-bullet-horizontal-gap": "5px",
       }}
       breakpoints={{
         // when window width is >= 640px

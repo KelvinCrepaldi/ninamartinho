@@ -74,14 +74,15 @@ const GlobalStyle = createGlobalStyle`
         --nav-color-hover-transparent:#4c41a299;
         --nav-link-fontsize: 1.5rem;
 
-        --content-color: linear-gradient(180deg, #92749e 30%, #756fb7ae 95.47%, #0000001a 100%);
+        --content-BackgroundColor: linear-gradient(180deg, #92749e 30%, #756fb7ae 95.47%, #0000001a 100%);
         --content-header-color:linear-gradient(180deg, #5a289ca2 10%, transparent 100%);
-        --content-shadow:  0px 0px 0px 1px #db80ff3c;
         --content-p-size: 1.5rem;
         --content-h3-size: 2.2rem;
         --content-h3-color: rgb(245, 166, 255);
         --content-h3-shadow: 2px 2px 2px #a7338a;
+
         --subtitle-logo-color: #d1beff;
+        --social-font-size: calc(2rem + 1vw);
         --social-color: #bfb1ff;
         --social-shadow: -1px 2px 2px #210041b2;
         --download-cv-color:#d1beff;
@@ -107,11 +108,15 @@ const GlobalStyle = createGlobalStyle`
 
         --contact-color: #f3dcf3;
         --contact-color-hover: #f3dcf3;
-        --contact-font-size: 1.7rem;
-        --contact-icon-size: 3rem;
+        --contact-font-size:  calc(1rem + 0.5vw);
+        --contact-icon-size: 2rem;
         --contact-icon-color: #f3dcf3;
 
-        --card-backgroundColor: #92749e;
+        --card-backgroundColor: linear-gradient(
+    104deg,
+    #a187b6 31%,
+    rgba(160, 131, 196, 0.4920343137254902) 100%
+  );
     }
 
     body {
@@ -158,7 +163,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
    h1,h2,h3{
-    text-shadow:1px 1px 4px rgb(0,0,0,0.7);
+    text-shadow:1px 1px 3px rgb(0,0,0,0.7);
    }
 
     h1{

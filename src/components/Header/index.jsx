@@ -6,10 +6,10 @@ import {
 } from "./header.styles";
 import { useState } from "react";
 
-const Header = ({ setOptionsLayer, setFirstOption, setSecondOption }) => {
+const Header = () => {
   const [optionsActivate, setOptionsActivate] = useState(false);
 
-  const handleScrollToTop = () => window.scroll(0, 0);
+  //const handleScrollToTop = () => window.scroll(0, 0);
 
   const handdleActivateMenu = (value) => {
     setOptionsActivate(value);

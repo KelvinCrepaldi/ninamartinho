@@ -10,10 +10,8 @@ export const Container = styled(Element)`
   min-height: calc(100vh - 400px);
   overflow: hidden;
 
-  background: var(--content-color);
+  background: var(--content-BackgroundColor);
   color: var(--purple-light);
-
-  box-shadow: var(--content-shadow);
 
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(5px);
@@ -51,21 +49,19 @@ export const Container = styled(Element)`
 
   p,
   ul {
-    margin: 0 auto 90px;
+    display: flex;
+    flex-direction: column;
+
     max-width: 1000px;
+    margin: 0 auto 90px;
+    padding: 0px 40px;
 
     font-size: var(--content-p-size);
-    text-shadow: 2px 2px 2px var(--purple-strong);
+    text-shadow: 1px 1px 1px var(--purple-strong);
   }
   p {
     text-align: center;
     margin-top: 30px;
-  }
-
-  ul {
-    padding: 0px 40px;
-    display: flex;
-    flex-direction: column;
   }
 
   li {
@@ -74,16 +70,18 @@ export const Container = styled(Element)`
   }
 
   li svg {
-    color: var(--purple-strong);
     margin-right: 10px;
+    color: var(--purple-strong);
   }
 
   h3 {
-    color: var(--content-h3-color);
+    text-align: center;
+
     padding: 20px 0 0 0;
     max-width: 1000px;
     margin: 30px auto 0;
-    text-align: center;
+
+    color: var(--content-h3-color);
     font-size: var(--content-h3-size);
     text-shadow: var(--content-h3-shadow);
   }

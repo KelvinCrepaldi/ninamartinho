@@ -5,21 +5,13 @@ import Contact from "components/Contact";
 import Portfolio from "components/Portfolio";
 import Social from "components/Social";
 import logo from "../../assets/logo.webp";
-import { useState } from "react";
 import curriculum from "../../assets/NinaMartinhoCurriculum.pdf";
 
 import { HomeContainer, DownloadCVLink } from "./Home.styles";
 const Home = () => {
-  const [optionsLayer, setOptionsLayer] = useState("firstLayer");
-  const [firstOption, setFirstOption] = useState("");
-  const [secondOption, setSecondOption] = useState("");
   return (
     <>
-      <Header
-        setOptionsLayer={setOptionsLayer}
-        setFirstOption={setFirstOption}
-        setSecondOption={setSecondOption}
-      ></Header>
+      <Header></Header>
       <HomeContainer>
         <div className="logo-container">
           <img
@@ -35,14 +27,7 @@ const Home = () => {
             </DownloadCVLink>
           </div>
         </div>
-        <Portfolio
-          optionsLayer={optionsLayer}
-          setOptionsLayer={setOptionsLayer}
-          firstOption={firstOption}
-          setFirstOption={setFirstOption}
-          secondOption={secondOption}
-          setSecondOption={setSecondOption}
-        />
+        <Portfolio />
         <About />
         <Contact />
       </HomeContainer>

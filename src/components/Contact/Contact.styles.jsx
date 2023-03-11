@@ -11,9 +11,10 @@ export const ContactContent = styled.div`
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    color: var(--contact-color);
+
     border-left: 2px solid #ffffff47;
     border-right: 2px solid #ffffff47;
+    color: var(--contact-color);
   }
 
   ul div {
@@ -27,10 +28,10 @@ export const ContactContent = styled.div`
     display: flex;
     margin: 15px;
     font-size: var(--contact-font-size);
+    transition: 0.2s;
   }
 
   ul li:hover {
-    transition: 0.4s;
     transform: scale(1.1);
   }
 
@@ -51,8 +52,6 @@ export const ContactContent = styled.div`
     color: var(--contact-icon-color);
   }
 
-  transition: 0.3s;
-
   .link {
     display: flex;
     align-items: center;
@@ -67,7 +66,7 @@ export const ContactContent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 850px) {
     ul {
       flex-direction: column;
     }
