@@ -1,44 +1,21 @@
 import {
   HeaderContainer,
-  LogoContainer,
   NavLink,
   NavMenu,
   OptionsDisplay,
 } from "./header.styles";
 import { useState } from "react";
-import icon5 from "../../assets/icon5.png";
 
-const Header = ({ setOptionsLayer, setFirstOption, setSecondOption }) => {
+const Header = () => {
   const [optionsActivate, setOptionsActivate] = useState(false);
 
-  const handleScrollToTop = () => window.scroll(0, 0);
+  //const handleScrollToTop = () => window.scroll(0, 0);
 
   const handdleActivateMenu = (value) => {
     setOptionsActivate(value);
   };
-
-  const handdleSetConcepts = () => {
-    setOptionsLayer("gallery");
-    setFirstOption("2D");
-    setSecondOption("Concepts");
-  };
-  const handdleSetIllustrations = () => {
-    setOptionsLayer("gallery");
-    setFirstOption("2D");
-    setSecondOption("Illustration");
-  };
-  const handdleSet3D = () => {
-    setOptionsLayer("gallery");
-    setFirstOption("3D");
-    setSecondOption("");
-  };
-
   return (
     <HeaderContainer>
-      <LogoContainer onClick={handleScrollToTop}>
-        <img src={icon5} alt="header logo" />
-        <span className="logo-text">Nina Martinho</span>
-      </LogoContainer>
       <NavMenu>
         <ul>
           <li
@@ -57,19 +34,7 @@ const Header = ({ setOptionsLayer, setFirstOption, setSecondOption }) => {
               Portfolio
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              activeClass="active"
-              className="showreel"
-              to="showreel"
-              spy={true}
-              smooth={true}
-              duration={0}
-              offset={-200}
-            >
-              Showreel
-            </NavLink>
-          </li>
+
           <li>
             <NavLink
               activeClass="active"
@@ -105,48 +70,74 @@ const Header = ({ setOptionsLayer, setFirstOption, setSecondOption }) => {
           >
             <div className="nav__portfolio-options">
               <ul>
+                <div className="border1"></div>
+                <div className="border2"></div>
+                <li>
+                  <NavLink
+                    activeClass="active"
+                    className="showreel"
+                    to="showreel"
+                    spy={true}
+                    smooth={true}
+                    duration={0}
+                    offset={-200}
+                  >
+                    Showreel
+                  </NavLink>
+                </li>
                 <span>2D</span>
                 <li>
                   <NavLink
                     activeClass="active"
-                    className="portfolio"
-                    to="portfolio"
+                    className="Illustrations"
+                    to="Illustrations"
                     spy={true}
                     smooth={true}
                     duration={0}
                     offset={-50}
-                    onClick={handdleSetConcepts}
                   >
-                    Concepts
+                    Ilustrations
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
                     activeClass="active"
-                    className="portfolio"
-                    to="portfolio"
+                    className="Concepts"
+                    to="Concepts"
                     spy={true}
                     smooth={true}
                     duration={0}
                     offset={-50}
-                    onClick={handdleSetIllustrations}
                   >
-                    Ilustrations
+                    Concepts
                   </NavLink>
                 </li>
                 <span>3D</span>
                 <li>
                   <NavLink
                     activeClass="active"
-                    className="portfolio"
-                    to="portfolio"
+                    className="3D"
+                    to="3D"
                     spy={true}
                     smooth={true}
                     duration={0}
                     offset={-50}
-                    onClick={handdleSet3D}
                   >
                     Projects
+                  </NavLink>
+                </li>
+
+                <li>
+                  <NavLink
+                    activeClass="active"
+                    className="muscadine"
+                    to="muscadine"
+                    spy={true}
+                    smooth={true}
+                    duration={0}
+                    offset={-200}
+                  >
+                    Muscadine Game
                   </NavLink>
                 </li>
               </ul>
