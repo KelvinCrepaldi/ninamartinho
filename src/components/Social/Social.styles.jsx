@@ -23,5 +23,7 @@ export const SocialContainer = styled.ul`
 
   a:hover {
     transform: scale(1.3);
+    color: var(--social-hover-color);
+    filter: drop-shadow(0px 0px 4px var(--social-hover-color));
   }
 `;

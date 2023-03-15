@@ -8,8 +8,8 @@ export const FrameVideo = styled.iframe`
   height: 50vw;
   max-width: 1000px;
   max-height: 500px;
-  padding: 5px;
   margin: 40px auto;
+  border: 5px solid var(--purple-light-transparent);
 `;
 export const SwipperSpace = styled.div`
   padding: 20px;

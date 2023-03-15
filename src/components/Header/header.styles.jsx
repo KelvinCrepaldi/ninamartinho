@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   box-sizing: border-box;
   position: fixed;
   top: 0px;
-  z-index: 1;
+  z-index: 50;
 
   width: 100vw;
   height: 60px;

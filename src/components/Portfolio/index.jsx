@@ -6,7 +6,7 @@ import { faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 
 import { ProjectsSectionsContainers, FrameVideo } from "./portfolio.styles";
 import SectionContainer from "components/SectionContainer";
-import ProjectsSection from "components/ProjectsSection";
+import SectionBox from "components/SectionBox";
 import ProjectSlider from "components/ProjectsSlider";
 
 import Muscadine from "components/Muscadine";
@@ -27,25 +27,7 @@ const Portfolio = () => {
       icon={<FontAwesomeIcon icon={faPaintBrush} />}
       title="Portfolio"
     >
-      <Element name="portfolio" />
-      <ProjectsSectionsContainers>
-        <Element name="Illustrations" />
-        <ProjectsSection title="Illustrations">
-          <ProjectSlider projects={projectsIllustrations} />
-        </ProjectsSection>
-
-        <Element name="Concepts" />
-        <ProjectsSection title="Concepts">
-          <ProjectSlider projects={projectsConcepts} />
-        </ProjectsSection>
-
-        <Element name="3D" />
-        <ProjectsSection title="3D">
-          <ProjectSlider projects={projects3D} />
-        </ProjectsSection>
-      </ProjectsSectionsContainers>
-
-      <ProjectsSection title="Showreel 2022">
+      <SectionBox title="Showreel 2022">
         <Element name="showreel" />
         <FrameVideo
           width="100%"
@@ -55,12 +37,28 @@ const Portfolio = () => {
           frameborder="0"
           allowFullScreen
         ></FrameVideo>
-      </ProjectsSection>
+      </SectionBox>
 
-      <ProjectsSection title="Muscadine Game">
-        <Element name="muscadine" />
-        <Muscadine />
-      </ProjectsSection>
+      <Element name="portfolio" />
+      <ProjectsSectionsContainers>
+        <Element name="Illustrations" />
+        <SectionBox title="Illustrations">
+          <ProjectSlider projects={projectsIllustrations} />
+        </SectionBox>
+
+        <Element name="Concepts" />
+        <SectionBox title="Concepts">
+          <ProjectSlider projects={projectsConcepts} />
+        </SectionBox>
+
+        <Element name="3D" />
+        <SectionBox title="3D">
+          <ProjectSlider projects={projects3D} />
+        </SectionBox>
+      </ProjectsSectionsContainers>
+
+      <Element name="muscadine" />
+      <Muscadine />
     </SectionContainer>
   );
 };

@@ -74,8 +74,8 @@ const GlobalStyle = createGlobalStyle`
         --nav-color-hover-transparent:#4c41a299;
         --nav-link-fontsize: 1.5rem;
 
-        --content-BackgroundColor: linear-gradient(180deg, #92749e 30%, #756fb7ae 95.47%, #0000001a 100%);
-        --content-header-color:linear-gradient(180deg, #5a289ca2 10%, transparent 100%);
+        --content-BackgroundColor: linear-gradient(180deg, #693e7a 30%, #756fb7ae 95.47%);
+        --content-header-color:linear-gradient(180deg, #5a289cd6 20%, transparent 100%);
         --content-p-size: 1.5rem;
         --content-h3-size: 2.2rem;
         --content-h3-color: rgb(245, 166, 255);
@@ -84,7 +84,9 @@ const GlobalStyle = createGlobalStyle`
         --subtitle-logo-color: #d1beff;
         --social-font-size: calc(2rem + 1vw);
         --social-color: #bfb1ff;
+        --social-hover-color: #dbd3ff;
         --social-shadow: -1px 2px 2px #210041b2;
+
         --download-cv-color:#d1beff;
         
         --color-white: #ecfbff;
@@ -113,10 +115,10 @@ const GlobalStyle = createGlobalStyle`
         --contact-icon-color: #f3dcf3;
 
         --card-backgroundColor: linear-gradient(
-    104deg,
-    #a187b6 31%,
-    rgba(160, 131, 196, 0.4920343137254902) 100%
-  );
+            104deg,
+            #a187b6 31%,
+            rgba(160, 131, 196, 0.4920343137254902) 100%
+        );
     }
 
     body {
@@ -127,39 +129,11 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         text-rendering: optimizeLegibility;
         
+        //background: url(${bgcolor}) repeat-x top, #2a013d;
+        background-color: #6100a1;
+        background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png");
 
-        background: url(${bgcolor}) repeat-x top, #2a013d;
-        background-size: 100%;
 
-    }
-
-    //loading bar
-    .loading-bar {
-        height: 4px;
-        width: 100%;
-        background: #f2f2f2;
-        position: relative;
-    }
-
-    .loading-bar-progress {
-        height: 100%;
-        background: #4caf50;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: width 0.3s ease-in-out;
-    }
-    .loading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        text-align: center;
-        font-size: 2rem;
-        background-color: #392357;
-        
     }
 
    h1,h2,h3{

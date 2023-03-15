@@ -19,10 +19,11 @@ export const HomeContainer = styled.div`
   }
 
   .subtitle-logo {
-    font-size: calc(100vw / 70 + 1.5vh);
-    color: var(--subtitle-logo-color);
-    text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.4);
+    font-size: calc(100vw / 90 + 0.6rem);
+    color: var(--color-white);
+    text-shadow: 1px 1px 1px black;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   img.logo-homepage {
@@ -50,6 +51,24 @@ export const DownloadCVLink = styled.a`
   box-shadow: -1px 2px 2px #210041b2, inset -1px 2px 2px #210041b2;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: -1px 2px 2px #210041b2;
+    background: #0000002f;
+    backdrop-filter: blur(10px);
+  }
+`;
+
+export const HomeNameTitle = styled.div`
+  text-align: center;
+
+  margin: 30px;
+
+  h1 {
+    font-family: var(--font-Macherie);
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+    line-height: auto;
+    font-size: calc(90vw / 90 + 3rem);
   }
 `;

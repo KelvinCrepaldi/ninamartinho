@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const ContactContent = styled.div`
   width: 100%;
+  max-width: 900px;
   height: 100%;
-  margin: 40px 0;
+  margin: 40px auto;
 
   ul {
     display: flex;

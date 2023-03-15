@@ -10,11 +10,10 @@ export const Container = styled(Element)`
   min-height: calc(100vh - 400px);
   overflow: hidden;
 
-  background: var(--content-BackgroundColor);
+  background-color: #a364eb;
+  background-image: url("https://www.transparenttextures.com/patterns/skewed-print.png");
+  //background: var(--content-BackgroundColor);
   color: var(--purple-light);
-
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(5px);
 
   &:last-of-type {
     margin-bottom: 30px;
@@ -26,7 +25,7 @@ export const Container = styled(Element)`
     justify-content: center;
     align-items: center;
 
-    padding: 45px 15px 15px;
+    padding: 45px 15px 35px;
 
     background: var(--content-header-color);
   }
@@ -45,44 +44,5 @@ export const Container = styled(Element)`
 
   &:nth-of-type(2) {
     margin-top: 0px;
-  }
-
-  p,
-  ul {
-    display: flex;
-    flex-direction: column;
-
-    max-width: 1000px;
-    margin: 0 auto 90px;
-    padding: 0px 40px;
-
-    font-size: var(--content-p-size);
-    text-shadow: 1px 1px 1px var(--purple-strong);
-  }
-  p {
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  li {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  li svg {
-    margin-right: 10px;
-    color: var(--purple-strong);
-  }
-
-  h3 {
-    text-align: center;
-
-    padding: 20px 0 0 0;
-    max-width: 1000px;
-    margin: 30px auto 0;
-
-    color: var(--content-h3-color);
-    font-size: var(--content-h3-size);
-    text-shadow: var(--content-h3-shadow);
   }
 `;

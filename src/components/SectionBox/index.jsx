@@ -1,5 +1,5 @@
 import { ProjectsSectionContainer } from "./ProjectsSection.styles";
-const ProjectsSection = ({ children, title }) => {
+const SectionBox = ({ children, title }) => {
   return (
     <ProjectsSectionContainer>
       <h2>{title}</h2>
@@ -9,4 +9,4 @@ const ProjectsSection = ({ children, title }) => {
   );
 };
 
-export default ProjectsSection;
+export default SectionBox;
