@@ -70,6 +70,21 @@ const Header = () => {
           >
             <div className="nav__portfolio-options">
               <ul>
+                <div className="border1"></div>
+                <div className="border2"></div>
+                <li>
+                  <NavLink
+                    activeClass="active"
+                    className="showreel"
+                    to="showreel"
+                    spy={true}
+                    smooth={true}
+                    duration={0}
+                    offset={-200}
+                  >
+                    Showreel
+                  </NavLink>
+                </li>
                 <span>2D</span>
                 <li>
                   <NavLink
@@ -111,19 +126,7 @@ const Header = () => {
                     Projects
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink
-                    activeClass="active"
-                    className="showreel"
-                    to="showreel"
-                    spy={true}
-                    smooth={true}
-                    duration={0}
-                    offset={-200}
-                  >
-                    Showreel
-                  </NavLink>
-                </li>
+
                 <li>
                   <NavLink
                     activeClass="active"

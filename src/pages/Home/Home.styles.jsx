@@ -49,12 +49,11 @@ export const DownloadCVLink = styled.a`
   transition: 0.4s;
   text-shadow: 1px 1px 1px #210041b2;
   box-shadow: -1px 2px 2px #210041b2, inset -1px 2px 2px #210041b2;
-
+  backdrop-filter: blur(3px);
   &:hover {
     transform: scale(1.2);
     box-shadow: -1px 2px 2px #210041b2;
     background: #0000002f;
-    backdrop-filter: blur(10px);
   }
 `;
 

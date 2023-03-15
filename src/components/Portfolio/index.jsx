@@ -27,6 +27,8 @@ const Portfolio = () => {
       icon={<FontAwesomeIcon icon={faPaintBrush} />}
       title="Portfolio"
     >
+      {" "}
+      <Element name="portfolio" />
       <SectionBox title="Showreel 2022">
         <Element name="showreel" />
         <FrameVideo
@@ -38,8 +40,6 @@ const Portfolio = () => {
           allowFullScreen
         ></FrameVideo>
       </SectionBox>
-
-      <Element name="portfolio" />
       <ProjectsSectionsContainers>
         <Element name="Illustrations" />
         <SectionBox title="Illustrations">
@@ -56,7 +56,6 @@ const Portfolio = () => {
           <ProjectSlider projects={projects3D} />
         </SectionBox>
       </ProjectsSectionsContainers>
-
       <Element name="muscadine" />
       <Muscadine />
     </SectionContainer>

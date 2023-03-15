@@ -7,7 +7,8 @@ export const MuscadineContent = styled.div`
   width: calc(100% - 40px);
   height: 50vh;
   margin: 0 auto;
-  min-height: calc(50vh + 5vw);
+  max-height: 500px;
+
   background: url(${(props) => props.backgroundimage}) no-repeat bottom;
   background-size: cover;
 
@@ -19,7 +20,7 @@ export const MuscadineContent = styled.div`
   border: transparent;
 
   div {
-    width: 50%;
+    width: 48%;
   }
 
   .border1,
@@ -62,12 +63,10 @@ export const DownloadLink = styled.a`
   transition: 0.2s;
   text-shadow: 1px 1px 1px #210041b2;
   box-shadow: -1px 2px 2px #210041b2, inset -1px 2px 2px #210041b2;
-
+  backdrop-filter: blur(3px);
   &:hover {
     transform: scale(1.3);
-    box-shadow: -1px 2px 2px #210041b2;
     background: #0000002f;
-    backdrop-filter: blur(10px);
   }
 `;
 
@@ -97,37 +96,48 @@ export const MuscadineTitleContent = styled.div`
 
   p {
     font-size: calc(1.2rem);
-    max-width: 400px;
+    max-width: 300px;
+    text-shadow: 1px 1px 1px black;
   }
 
   @media screen and (min-width: 1000px) {
+    flex-direction: column;
     text-align: center;
-    align-items: flex-start;
+    align-items: center;
+    align-content: center;
     h1 {
-      margin: 140px 70px;
+      margin-bottom: 20px;
     }
   }
 `;
 
 export const MuscadineDownloadContent = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
   z-index: 1;
+  margin-bottom: 30px;
 
   span {
     width: 100%;
     box-sizing: border-box;
 
     text-align: center;
-    margin-bottom: 20px;
+
     font-size: 1rem;
+    color: var(--color-white);
+  }
+  span a {
+    color: #a574ff;
   }
 
   @media screen and (min-width: 1000px) {
   }
 `;
+
+export const MuscadineInfo = styled.section``;

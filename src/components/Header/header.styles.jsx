@@ -40,22 +40,46 @@ export const OptionsDisplay = styled.div`
   position: absolute;
   top: 20px;
   left: 10px;
-  width: 300px;
+  width: 340px;
+
+  padding-bottom: 20px;
 
   overflow: hidden;
   animation-name: options-in;
   animation-duration: 1s;
 
   .nav__portfolio-options {
-    background: var(--menu-bg);
-    border-radius: 10px;
-    padding-bottom: 6px;
+    width: calc(100% - 20px);
+    background-color: #6100a1;
+    background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png");
+
+    margin: 0 auto;
+  }
+
+  .border1,
+  .border2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--purple-light-transparent);
+  }
+
+  .border1 {
+    right: -3px;
+    top: -3px;
+  }
+
+  .border2 {
+    right: 3px;
+    top: 3px;
   }
 
   ul {
+    position: relative;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    padding: 5px;
   }
 
   li {
@@ -64,11 +88,11 @@ export const OptionsDisplay = styled.div`
     border-bottom: 1px solid transparent;
     transition: 0.5s;
     cursor: pointer;
+    z-index: 3;
   }
   li:hover {
-    border-top: 1px solid var(--nav-color-hover);
-    border-bottom: 1px solid var(--nav-color-hover);
-    background: var(--nav-color-hover-transparent);
+    border-left: 3px solid white;
+    margin-left: 5px;
   }
 
   span {

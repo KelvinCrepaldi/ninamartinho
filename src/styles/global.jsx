@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
         --font-Macherie: 'macherie';
         --font-Doky: 'Doky';
 
-        --menu-bg: #f3dcf386;
+        --menu-bg: #53357a;
         --nav-color: #ffff;
         --nav-color-hover:#bfb1ff; 
         --nav-color-hover-shadow: #8280ff;
