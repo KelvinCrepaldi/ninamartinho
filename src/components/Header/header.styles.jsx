@@ -3,16 +3,16 @@ import { Link } from "react-scroll";
 
 export const HeaderContainer = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   box-sizing: border-box;
   position: fixed;
   top: 0px;
-  z-index: 1;
+  z-index: 50;
 
   width: 100vw;
-  height: 90px;
-  padding: 0 30px;
+  height: 60px;
+  padding: 0 10px;
 
   background: rgb(0, 0, 0);
   background: linear-gradient(
@@ -20,35 +20,6 @@ export const HeaderContainer = styled.header`
     rgba(0, 0, 0, 0) 0%,
     rgba(19, 0, 34, 0.4) 60%
   );
-`;
-
-export const LogoContainer = styled.div`
-  cursor: pointer;
-  .logo-text {
-    position: absolute;
-    top: 25px;
-    left: 80px;
-    font-size: 1rem;
-  }
-
-  img {
-    height: 70px;
-
-    animation: headerlogoanimation 3s infinite alternate-reverse;
-  }
-
-  @keyframes headerlogoanimation {
-    from {
-      -webkit-filter: drop-shadow(0px 0px 3px rgb(255, 255, 255, 0.2));
-      filter: drop-shadow(0px 0px 3px rgb(255, 255, 255, 0.2));
-      transform: scale(1);
-    }
-    to {
-      -webkit-filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.2));
-      filter: drop-shadow(0px 0px 10px rgb(255, 255, 255, 0.7));
-      transform: scale(1.1);
-    }
-  }
 `;
 
 export const NavMenu = styled.nav`
@@ -69,22 +40,46 @@ export const OptionsDisplay = styled.div`
   position: absolute;
   top: 20px;
   left: 10px;
-  width: 300px;
+  width: 340px;
+
+  padding-bottom: 20px;
 
   overflow: hidden;
   animation-name: options-in;
   animation-duration: 1s;
 
   .nav__portfolio-options {
-    background: var(--menu-bg);
-    border-radius: 10px;
-    padding-bottom: 6px;
+    width: calc(100% - 20px);
+    background-color: #6100a1;
+    background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png");
+
+    margin: 0 auto;
+  }
+
+  .border1,
+  .border2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--purple-light-transparent);
+  }
+
+  .border1 {
+    right: -3px;
+    top: -3px;
+  }
+
+  .border2 {
+    right: 3px;
+    top: 3px;
   }
 
   ul {
+    position: relative;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    padding: 5px;
   }
 
   li {
@@ -93,11 +88,11 @@ export const OptionsDisplay = styled.div`
     border-bottom: 1px solid transparent;
     transition: 0.5s;
     cursor: pointer;
+    z-index: 3;
   }
   li:hover {
-    border-top: 1px solid var(--nav-color-hover);
-    border-bottom: 1px solid var(--nav-color-hover);
-    background: var(--nav-color-hover-transparent);
+    border-left: 3px solid white;
+    margin-left: 5px;
   }
 
   span {

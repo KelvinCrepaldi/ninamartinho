@@ -2,25 +2,37 @@ import styled from "styled-components";
 
 export const ContactContent = styled.div`
   width: 100%;
+  max-width: 900px;
   height: 100%;
-  margin: 40px 0;
+  margin: 40px auto;
 
   ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+
+    border-left: 2px solid #ffffff47;
+    border-right: 2px solid #ffffff47;
     color: var(--contact-color);
   }
 
+  ul div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
   ul li {
+    display: flex;
     margin: 15px;
     font-size: var(--contact-font-size);
-    text-align: center;
+    transition: 0.2s;
   }
 
   ul li:hover {
-    transition: 0.4s;
     transform: scale(1.1);
   }
 
@@ -41,13 +53,10 @@ export const ContactContent = styled.div`
     color: var(--contact-icon-color);
   }
 
-  transition: 0.3s;
-
   .link {
     display: flex;
     align-items: center;
-
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .link:hover {
@@ -55,6 +64,12 @@ export const ContactContent = styled.div`
 
     svg {
       color: var(--contact-color-hover);
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    ul {
+      flex-direction: column;
     }
   }
 `;

@@ -14,4 +14,5 @@ export const BackgroundContainer = styled.div`
   background-size: auto 100%;
 
   z-index: -10;
+  opacity: 0.3;
 `;
