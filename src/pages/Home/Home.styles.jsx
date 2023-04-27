@@ -19,7 +19,7 @@ export const HomeContainer = styled.div`
   }
 
   .subtitle-logo {
-    font-size: calc(100vw / 90 + 0.6rem);
+    font-size: 1.4rem;
     color: var(--color-white);
     text-shadow: 1px 1px 1px black;
     text-align: center;
@@ -63,11 +63,11 @@ export const HomeNameTitle = styled.div`
   margin: 30px;
 
   h1 {
-    font-family: var(--font-Macherie);
+    font-family: var(--font-title);
     margin: 0;
     padding: 0;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     line-height: auto;
-    font-size: calc(90vw / 90 + 3rem);
+    font-size: calc(90vw / 90 + 4rem);
   }
 `;

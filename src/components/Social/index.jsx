@@ -29,20 +29,6 @@ const Social = () => {
             <FontAwesomeIcon icon={faArtstation}></FontAwesomeIcon>
           </a>
         </li>
-        <li>
-          <a href="https://twitter.com/Fofoxyy" rel="noopener" target="_blank">
-            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/ninahellart/?hl=en"
-            rel="noopener"
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-          </a>
-        </li>
       </SocialContainer>
     </>
   );

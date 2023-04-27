@@ -112,6 +112,19 @@ const Header = () => {
                     Concepts
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink
+                    activeClass="active"
+                    className="Traditional"
+                    to="Traditional"
+                    spy={true}
+                    smooth={true}
+                    duration={0}
+                    offset={-50}
+                  >
+                    Traditional
+                  </NavLink>
+                </li>
                 <span>3D</span>
                 <li>
                   <NavLink
