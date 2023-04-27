@@ -5,6 +5,7 @@ export const MuscadineContent = styled.div`
   position: relative;
 
   width: calc(100% - 40px);
+  max-width: 1300px;
   height: 50vh;
   margin: 0 auto;
   max-height: 500px;
@@ -89,12 +90,11 @@ export const MuscadineTitleContent = styled.div`
   h1 {
     margin-top: 30px;
     font-family: var(--font-title);
-    font-size: calc(100vw / 80 + 1.9rem);
     text-shadow: 2px 2px 3px black;
   }
 
   p {
-    font-size: calc(1.2rem);
+    font-size: 1.2rem;
     max-width: 300px;
     text-shadow: 1px 1px 1px black;
   }

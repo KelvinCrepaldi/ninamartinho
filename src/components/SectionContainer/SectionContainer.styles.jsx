@@ -7,13 +7,11 @@ export const Container = styled(Element)`
   padding-bottom: 30px;
 
   width: calc(100%);
-  min-height: calc(100vh - 400px);
   overflow: hidden;
 
-  background-color: rgb(166, 146, 182);
+  background-color: rgb(127, 113, 139);
   background-image: url("https://www.transparenttextures.com/patterns/skewed-print.png");
   //background: var(--content-BackgroundColor);
-  color: var(--purple-light);
 
   &:last-of-type {
     margin-bottom: 30px;

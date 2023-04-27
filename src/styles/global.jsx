@@ -66,6 +66,7 @@ const GlobalStyle = createGlobalStyle`
     :root{
         --font-title: 'Asap Condensed';
         --font-text: 'Mulish';
+        --text-color: #f5eaf5;
 
         --menu-bg: #53357a;
         --nav-color: #ffff;
@@ -75,16 +76,13 @@ const GlobalStyle = createGlobalStyle`
         --nav-link-fontsize: 1.5rem;
 
         --content-BackgroundColor: linear-gradient(180deg, #eddef3 30%, #756fb7ae 95.47%);
-        --content-header-color:linear-gradient(180deg, #5a289cd6 20%, transparent 100%);
+        --content-header-color:linear-gradient(180deg, #382255d5 20%, transparent 100%);
         --content-p-size: 1.5rem;
         --content-h3-size: 2.2rem;
         --content-h3-color: rgb(245, 166, 255);
         --content-h3-shadow: 2px 2px 2px #a7338a;
 
-        --subtitle-logo-color: #d1beff;
         --social-font-size: calc(2rem + 1vw);
-        --social-color: #bfb1ff;
-        --social-hover-color: #dbd3ff;
         --social-shadow: -1px 2px 2px #210041b2;
 
         --download-cv-color:#d1beff;
@@ -127,13 +125,13 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: var(--font-text);
         font-display: swap;
-        color: var(--color-white);
+        color: var(--text-color);
         text-shadow: 1px 1px 2px var(--shadow-gray);
         overflow-x: hidden;
         text-rendering: optimizeLegibility;
         
         //background: url(${bgcolor}) repeat-x top, #2a013d;
-        background-color: #2e004b;
+        background-color: #271631;
 
 
     }
@@ -152,7 +150,6 @@ const GlobalStyle = createGlobalStyle`
 
     p, li {
         font-size: 1rem;
-
     }
     span{
         font-size: 1.4rem;

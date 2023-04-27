@@ -29,7 +29,7 @@ export const ProjectCardContainer = styled.div`
     text-shadow: var(--portfolio-card-textshadow);
     margin: 0;
     padding: 10px;
-    color: var(--purple-light);
+    color: var(--text-color);
     text-align: center;
   }
   a {
