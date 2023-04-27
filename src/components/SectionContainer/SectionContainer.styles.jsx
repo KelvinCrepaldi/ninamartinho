@@ -10,7 +10,7 @@ export const Container = styled(Element)`
   min-height: calc(100vh - 400px);
   overflow: hidden;
 
-  background-color: #a364eb;
+  background-color: rgb(166, 146, 182);
   background-image: url("https://www.transparenttextures.com/patterns/skewed-print.png");
   //background: var(--content-BackgroundColor);
   color: var(--purple-light);

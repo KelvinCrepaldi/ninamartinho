@@ -15,14 +15,14 @@ export const AboutList = styled.ul`
     margin: 5px;
     width: 100%;
 
-    background: var(--card-backgroundColor);
+    background: var(--about-card-backgroundColor);
     border-radius: 5px;
     border-left: 3px solid white;
     transition: 0.3s;
   }
 
   li:hover {
-    border-left: 8px solid var(--purple-strong);
+    border-left: 8px solid var(--about-star-color);
   }
 
   p {
@@ -32,13 +32,13 @@ export const AboutList = styled.ul`
 
   li svg {
     margin-right: 10px;
-    color: var(--purple-strong);
+    color: var(--about-star-color);
     transition: 0.3s;
   }
 
   li:hover svg {
     margin-right: 20px;
-    color: var(--purple-medium);
+    color: var(--about-star-color-hover);
   }
 
   h3 {
@@ -57,5 +57,6 @@ export const AboutList = styled.ul`
 export const AboutText = styled.p`
   max-width: 900px;
   margin: 20px auto;
-  text-align: center;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 1px var(--about-star-color);
 `;

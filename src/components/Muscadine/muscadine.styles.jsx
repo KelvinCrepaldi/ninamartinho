@@ -55,17 +55,16 @@ export const DownloadLink = styled.a`
   text-decoration: none;
   color: var(--color-white);
   font-size: 1.5rem;
-  width: 300px;
-  padding: 10px;
+  width: 250px;
+  padding: 5px;
   margin: 10px;
-  border: 1px solid var(--color-white);
+  border: 2px solid var(--color-white);
   border-radius: 5px;
   transition: 0.2s;
   text-shadow: 1px 1px 1px #210041b2;
-  box-shadow: -1px 2px 2px #210041b2, inset -1px 2px 2px #210041b2;
   backdrop-filter: blur(3px);
   &:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
     background: #0000002f;
   }
 `;
@@ -89,7 +88,7 @@ export const MuscadineTitleContent = styled.div`
 
   h1 {
     margin-top: 30px;
-    font-family: var(--font-Macherrie);
+    font-family: var(--font-title);
     font-size: calc(100vw / 80 + 1.9rem);
     text-shadow: 2px 2px 3px black;
   }

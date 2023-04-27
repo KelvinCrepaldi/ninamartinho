@@ -12,11 +12,10 @@ const ProjectSlider = ({ projects }) => {
       spaceBetween={1}
       navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
       style={{
-        "--swiper-pagination-color": "#555097",
+        "--swiper-pagination-color": "rgb(55,55,55)",
         "--swiper-pagination-bullet-inactive-color": "#f3dcf388",
         "--swiper-pagination-bullet-inactive-opacity": "1",
         "--swiper-pagination-bullet-size": "16px",

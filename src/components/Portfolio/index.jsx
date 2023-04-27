@@ -19,6 +19,9 @@ const Portfolio = () => {
   const projectsIllustrations = projects.filter(
     (project) => project.album === "Illustrations"
   );
+  const TraditionalIllustrations = projects.filter(
+    (project) => project.album === "Traditional"
+  );
 
   const projects3D = projects.filter((project) => project.album === "3D");
 
@@ -49,6 +52,11 @@ const Portfolio = () => {
         <Element name="Concepts" />
         <SectionBox title="Concepts">
           <ProjectSlider projects={projectsConcepts} />
+        </SectionBox>
+
+        <Element name="Traditional" />
+        <SectionBox title="Traditional Works">
+          <ProjectSlider projects={TraditionalIllustrations} />
         </SectionBox>
 
         <Element name="3D" />

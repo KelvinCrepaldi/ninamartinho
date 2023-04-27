@@ -64,8 +64,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root{
-        --font-Macherie: 'macherie';
-        --font-Doky: 'Doky';
+        --font-title: 'Asap Condensed';
+        --font-text: 'Mulish';
 
         --menu-bg: #53357a;
         --nav-color: #ffff;
@@ -74,7 +74,7 @@ const GlobalStyle = createGlobalStyle`
         --nav-color-hover-transparent:#4c41a299;
         --nav-link-fontsize: 1.5rem;
 
-        --content-BackgroundColor: linear-gradient(180deg, #693e7a 30%, #756fb7ae 95.47%);
+        --content-BackgroundColor: linear-gradient(180deg, #eddef3 30%, #756fb7ae 95.47%);
         --content-header-color:linear-gradient(180deg, #5a289cd6 20%, transparent 100%);
         --content-p-size: 1.5rem;
         --content-h3-size: 2.2rem;
@@ -99,11 +99,10 @@ const GlobalStyle = createGlobalStyle`
         --white: #ffff;
         --black: #080008;
 
-        --portfolio-card-background: linear-gradient(88.8deg, rgba(217, 217, 217, 0.11) 24.19%, rgba(217, 217, 217, 0) 98.58%);
-        --portfolio-card-shadow: 1px 1px 10px black;
+        --portfolio-card-background: linear-gradient(88.8deg, rgba(10, 10, 10, 0.11) 24.19%, rgba(217, 217, 217, 0) 50.58%);
+     
         --portfolio-card-font-size: 1.4rem;
-        --portfolio-card-textshadow: none;
-        --portfolio-card-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        --portfolio-card-textshadow: 1px 1px 2px black;
         --portfolio-card-h1-size: 1.5rem;
         --portfolio-card-p-size: 1rem;
         --portfolio-card-hover-color:#370d4b75;
@@ -116,13 +115,17 @@ const GlobalStyle = createGlobalStyle`
 
         --card-backgroundColor: linear-gradient(
             104deg,
-            #a187b6 31%,
-            rgba(160, 131, 196, 0.4920343137254902) 100%
+            #5b1e9195 31%,
+            rgba(160, 131, 196, 0) 100%
         );
+
+        --about-star-color: #412758;
+        --about-star-color-hover: white;
+        --about-card-backgroundColor:linear-gradient(90deg, rgba(116,93,136,1) 0%, rgba(0,0,0,0) 100%) ;
     }
 
     body {
-        font-family: var(--font-Macherie);
+        font-family: var(--font-text);
         font-display: swap;
         color: var(--color-white);
         text-shadow: 1px 1px 2px var(--shadow-gray);
@@ -130,38 +133,26 @@ const GlobalStyle = createGlobalStyle`
         text-rendering: optimizeLegibility;
         
         //background: url(${bgcolor}) repeat-x top, #2a013d;
-        background-color: #6100a1;
-        background-image: url("https://www.transparenttextures.com/patterns/black-lozenge.png");
+        background-color: #2e004b;
 
 
     }
 
    h1,h2,h3{
+    font-family: var(--font-title);
     text-shadow:1px 1px 3px rgb(0,0,0,0.7);
    }
 
-    h1{
-        font-family: var(--font-Doky);
-        font-size: 3.5rem;
-    }
+   h1{
+    font-size: 2.5rem;
+   }
+   h2{
+    font-size: 1.5rem;
+   }
 
-    h2{
-        font-size: 3rem;
-    }
-
-    h3{
-        font-size: 2.5rem;
-    }
-
-    h4{
-        font-size: 2.0rem;
-    }
-
-    h5{
-        font-size: 1.5rem;
-    }
     p, li {
-        font-size: 1.4rem;
+        font-size: 1rem;
+
     }
     span{
         font-size: 1.4rem;
