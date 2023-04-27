@@ -48,7 +48,6 @@ export const AboutList = styled.ul`
     max-width: 1000px;
     margin: 30px auto 0;
 
-    color: var(--content-h3-color);
     font-size: var(--content-h3-size);
     text-shadow: var(--content-h3-shadow);
   }

@@ -20,7 +20,7 @@ export const HomeContainer = styled.div`
 
   .subtitle-logo {
     font-size: 1.4rem;
-    color: var(--color-white);
+
     text-shadow: 1px 1px 1px black;
     text-align: center;
     margin-bottom: 20px;
@@ -40,11 +40,11 @@ export const DownloadCVLink = styled.a`
   display: block;
   text-align: center;
   text-decoration: none;
-  color: var(--download-cv-color);
+  color: var(--text-color);
   font-size: 1.5rem;
   width: 300px;
   padding: 10px;
-  border: 1px solid var(--download-cv-color);
+  border: 1px solid var(--text-color);
   border-radius: 5px;
   transition: 0.4s;
   text-shadow: 1px 1px 1px #210041b2;
