@@ -119,7 +119,7 @@ const GlobalStyle = createGlobalStyle`
 
         --about-star-color: #412758;
         --about-star-color-hover: white;
-        --about-card-backgroundColor:linear-gradient(90deg, rgba(116,93,136,1) 0%, rgba(0,0,0,0) 100%) ;
+        --about-card-backgroundColor:linear-gradient(90deg, #4f3b61 0%, rgba(0,0,0,0) 100%) ;
     }
 
     body {
