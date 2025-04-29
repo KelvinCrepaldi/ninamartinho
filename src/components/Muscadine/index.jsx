@@ -4,9 +4,11 @@ import {
   DownloadLink,
   MuscadineTitleContent,
   MuscadineDownloadContent,
+  MuscadineVideo,
 } from "./muscadine.styles";
 
 import backgroundimage from "../../assets/muscadineBackground.jpg";
+import { FrameVideo } from "components/Portfolio/portfolio.styles";
 const Muscadine = ({}) => {
   return (
     <div>
@@ -20,23 +22,12 @@ const Muscadine = ({}) => {
             uncovers mysteries across an old witch's kitchen.
           </p>
         </MuscadineTitleContent>
-        <MuscadineDownloadContent>
-          <DownloadLink
-            href="https://drive.google.com/file/d/1ZS1AFFZw918X9yq8Vbx5AU_Qs8f7V57i/view?usp=share_link"
-            target="_blank"
-          >
-            Download Game<span>1,3G</span>
-          </DownloadLink>
-          <span>
-            Go to{" "}
-            <a
-              href="https://sites.google.com/view/muscadinewiki/refs-mechanics"
-              target="_blank"
-            >
-              Muscadine wiki...
-            </a>
-          </span>
-        </MuscadineDownloadContent>
+        <MuscadineVideo
+                    src="https://www.youtube.com/embed/wiQ59Elt7OE"
+                    title="Showreel 2022"
+                    frameborder="0"
+                    allowFullScreen
+       ></MuscadineVideo>
       </MuscadineContent>
     </div>
   );

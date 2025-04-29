@@ -46,6 +46,7 @@ export const MuscadineContent = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   
   }
 `;
 
@@ -136,6 +137,23 @@ export const MuscadineDownloadContent = styled.div`
   }
 
   @media screen and (min-width: 1000px) {
+  }
+`;
+
+export const MuscadineVideo = styled.iframe`
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 250px;
+  margin: 40px auto;
+  border: 5px solid var(--purple-light-transparent);
+  z-index: 10;
+
+  @media screen and (min-width: 1000px) {
+
   }
 `;
 
